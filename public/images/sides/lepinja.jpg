@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <!-- Background -->
+  <rect width="300" height="300" fill="#f5f5f5"/>
+  
+  <!-- Wooden cutting board -->
+  <rect x="60" y="150" width="180" height="30" rx="3" ry="3" fill="#8b4513"/>
+  <rect x="70" y="155" width="160" height="20" rx="2" ry="2" fill="#a0522d"/>
+  
+  <!-- Lepinja (flatbread) -->
+  <ellipse cx="150" cy="140" rx="80" ry="35" fill="#f9e8c7"/>
+  <ellipse cx="150" cy="135" rx="75" ry="30" fill="#f5deb3"/>
+  
+  <!-- Texture details -->
+  <circle cx="130" cy="130" r="2" fill="#e6d2a8"/>
+  <circle cx="150" cy="125" r="3" fill="#e6d2a8"/>
+  <circle cx="170" cy="130" r="2" fill="#e6d2a8"/>
+  <circle cx="110" cy="135" r="2" fill="#e6d2a8"/>
+  <circle cx="190" cy="135" r="2" fill="#e6d2a8"/>
+  
+  <!-- Golden crust -->
+  <path d="M 75,140 C 100,150 200,150 225,140" fill="none" stroke="#d4a76a" stroke-width="3"/>
+  
+  <!-- Section cut from bread -->
+  <path d="M 150,140 L 200,125 L 210,150 L 160,165 Z" fill="#f9e8c7"/>
+  <path d="M 160,135 L 190,125 L 195,140 L 165,150 Z" fill="#f5deb3"/>
+  
+  <!-- Tiny bit of flour dusting -->
+  <circle cx="100" cy="150" r="10" fill="#ffffff" opacity="0.3"/>
+  <circle cx="180" cy="160" r="8" fill="#ffffff" opacity="0.2"/>
+  
+  <!-- Text Label -->
+  <text x="150" y="250" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">
+    Lepinja
+  </text>
+</svg>

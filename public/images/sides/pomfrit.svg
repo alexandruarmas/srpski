@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Wooden Table Gradient -->
+    <linearGradient id="woodGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8B5A2B" />
+      <stop offset="20%" stop-color="#A67C52" />
+      <stop offset="40%" stop-color="#8B5A2B" />
+      <stop offset="60%" stop-color="#A67C52" />
+      <stop offset="80%" stop-color="#8B5A2B" />
+      <stop offset="100%" stop-color="#A67C52" />
+    </linearGradient>
+    
+    <!-- Paper Cone Gradient -->
+    <linearGradient id="paperGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F5F5F5" />
+    </linearGradient>
+    
+    <!-- Paper Inner Gradient -->
+    <linearGradient id="paperInnerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5F5F5" />
+      <stop offset="100%" stop-color="#EEEEEE" />
+    </linearGradient>
+    
+    <!-- Paper Pattern -->
+    <pattern id="paperPattern" width="10" height="10" patternUnits="userSpaceOnUse">
+      <rect width="10" height="10" fill="#F5F5F5" fill-opacity="0.1" />
+      <path d="M0,0 L10,10 M10,0 L0,10" stroke="#E0E0E0" stroke-width="0.2" opacity="0.2" />
+    </pattern>
+    
+    <!-- French Fry Gradient -->
+    <linearGradient id="fryGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD54F" />
+      <stop offset="100%" stop-color="#FFA000" />
+    </linearGradient>
+    
+    <!-- French Fry Inner Gradient -->
+    <linearGradient id="fryInnerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFECB3" />
+      <stop offset="100%" stop-color="#FFD54F" />
+    </linearGradient>
+    
+    <!-- French Fry End Gradient -->
+    <linearGradient id="fryEndGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFCC80" />
+      <stop offset="100%" stop-color="#FF8F00" />
+    </linearGradient>
+    
+    <!-- Salt Gradient -->
+    <linearGradient id="saltGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F5F5F5" />
+    </linearGradient>
+    
+    <!-- Oil Shine Gradient -->
+    <radialGradient id="oilShineGradient" cx="50%" cy="50%" r="70%" fx="40%" fy="40%">
+      <stop offset="0%" stop-color="#FFEB3B" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#FFC107" stop-opacity="0" />
+    </radialGradient>
+    
+    <!-- Ketchup Gradient -->
+    <linearGradient id="ketchupGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E53935" />
+      <stop offset="100%" stop-color="#C62828" />
+    </linearGradient>
+    
+    <!-- Drop Shadow Filter -->
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2" />
+      <feOffset dx="0" dy="2" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    
+    <!-- Soft Shadow Filter -->
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="1" />
+      <feOffset dx="0" dy="1" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.2" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    
+    <!-- Inner Shadow Filter -->
+    <filter id="innerShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="1.5" />
+      <feOffset dx="0" dy="1" />
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.4" />
+      </feComponentTransfer>
+      <feComposite in2="SourceGraphic" operator="in" />
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    
+    <!-- Highlight Filter -->
+    <filter id="highlightFilter" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="1" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3" />
+      </feComponentTransfer>
+      <feComposite in="SourceGraphic" />
+    </filter>
+    
+    <!-- Crispy Fry Texture Pattern -->
+    <pattern id="crispyPattern" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="4" fill="#FFA000" fill-opacity="0.1" />
+      <path d="M0,0 L4,4 M4,0 L0,4" stroke="#FF8F00" stroke-width="0.3" opacity="0.2" />
+    </pattern>
+  </defs>
+  
+  <!-- Wooden Table -->
+  <rect x="0" y="175" width="200" height="25" fill="url(#woodGradient)" />
+  <path d="M0,180 L200,183 M0,190 L200,187 M0,195 L200,193" stroke="#5D4037" stroke-width="0.3" fill="none" opacity="0.3" />
+  
+  <!-- Paper Cone Shadow on Table -->
+  <ellipse cx="100" cy="175" rx="45" ry="10" fill="rgba(0,0,0,0.15)" filter="url(#softShadow)" />
+  
+  <!-- Paper Cone -->
+  <g filter="url(#dropShadow)">
+    <!-- Cone Back Side -->
+    <path d="M100,160 
+            L65,110 
+            L135,110 
+            Z" 
+          fill="url(#paperGradient)" />
+    
+    <!-- Cone Front Left Side -->
+    <path d="M100,160 
+            L65,110 
+            L100,110 
+            Z" 
+          fill="url(#paperInnerGradient)" />
+    
+    <!-- Cone Front Right Side -->
+    <path d="M100,160 
+            L100,110 
+            L135,110 
+            Z" 
+          fill="url(#paperGradient)" />
+    
+    <!-- Cone Paper Texture -->
+    <path d="M100,160 
+            L65,110 
+            L135,110 
+            Z" 
+          fill="url(#paperPattern)" />
+    
+    <!-- Cone Edges -->
+    <path d="M100,160 
+            L65,110 
+            L135,110 
+            Z" 
+          fill="none" 
+          stroke="#E0E0E0" 
+          stroke-width="0.5" />
+    
+    <!-- Cone Front Fold Line -->
+    <path d="M100,160 
+            L100,110" 
+          fill="none" 
+          stroke="#E0E0E0" 
+          stroke-width="0.5" />
+    
+    <!-- Cone Top Edge -->
+    <path d="M65,110 
+            L135,110" 
+          fill="none" 
+          stroke="#E0E0E0" 
+          stroke-width="0.7" />
+    
+    <!-- Paper Cone Highlights -->
+    <path d="M80,135 
+            L90,120" 
+          fill="none" 
+          stroke="#FFFFFF" 
+          stroke-width="0.8" 
+          opacity="0.3" />
+    
+    <path d="M120,135 
+            L110,120" 
+          fill="none" 
+          stroke="#FFFFFF" 
+          stroke-width="0.8" 
+          opacity="0.3" />
+  </g>
+  
+  <!-- French Fries -->
+  <g filter="url(#softShadow)">
+    <!-- Fry Group 1 (Left Side) -->
+    <g transform="translate(85, 100) rotate(-15)">
+      <!-- Fry 1 -->
+      <g transform="rotate(10)">
+        <rect x="-3" y="-20" width="6" height="40" rx="1" ry="1" fill="url(#fryGradient)" />
+        <rect x="-1.5" y="-18" width="3" height="36" rx="0.5" ry="0.5" fill="url(#fryInnerGradient)" opacity="0.7" />
+        <rect x="-3" y="-20" width="6" height="40" rx="1" ry="1" fill="url(#crispyPattern)" />
+        <rect x="-3" y="-20" width="6" height="3" rx="1" ry="1" fill="url(#fryEndGradient)" />
+        <rect x="-3" y="17" width="6" height="3" rx="1" ry="1" fill="url(#fryEndGradient)" />
+      </g>
+      
+      <!-- Fry 2 -->
+      <g transform="translate(-7, -2) rotate(25)">
+        <rect x="-2.5" y="-16" width="5" height="32" rx="1" ry="1" fill="url(#fryGradient)" />
+        <rect x="-1" y="-14" width="2" height="28" rx="0.5" ry="0.5" fill="url(#fryInnerGradient)" opacity="0.7" />
+        <rect x="-2.5" y="-16" width="5" height="32" rx="1" ry="1" fill="url(#crispyPattern)" />
+        <rect x="-2.5" y="-16" width="5" height="2.5" rx="1" ry="1" fill="url(#fryEndGradient)" />
+        <rect x="-2.5" y="13.5" width="5" height="2.5" rx="1" ry="1" fill="url(#fryEndGradient)" />
+      </g>
+      
+      <!-- Fry 3 -->
+      <g transform="translate(-12, 5) rotate(40)">
+        <rect x="-2" y="-15" width="4" height="30" rx="1" ry="1" fill="url(#fryGradient)" />
+        <rect x="-1" y="-13" width="2" height="26" rx="0.5" ry="0.5" fill="url(#fryInnerGradient)" opacity="0.7" />
+        <rect x="-2" y="-15" width="4" height="30" rx="1" ry="1" fill="url(#crispyPattern)" />
+        <rect x="-2" y="-15" width="4" height="2" rx="1" ry="1" fill="url(#fryEndGradient)" />
+        <rect x="-2" y="13" width="4" height="2" rx="1" ry="1" fill="url(#fryEndGradient)" />
+      </g>
+    </g>
+    
+    <!-- Fry Group 2 (Center) -->
+    <g transform="translate(100, 95)">
+      <!-- Fry 1 -->
+      <g transform="rotate(-5)">
+        <rect x="-3" y="-22" width="6" height="44" rx="1" ry="1" fill="url(#fryGradient)" />
+        <rect x="-1.5" y="-20" width="3" height="40" rx="0.5" ry="0.5" fill="url(#fryInnerGradient)" opacity="0.7" />
+        <rect x="-3" y="-22" width="6" height="44" rx="1" ry="1" fill="url(#crispyPattern)" />
+        <rect x="-3" y="-22" width="6" height="3" rx="1" ry="1" fill="url(#fryEndGradient)" />
+        <rect x="-3" y="19" width="6" height="3" rx="1" ry="1" fill="url(#fryEndGradient)" />
+      </g>
+      
+      <!-- Fry 2 -->
+      <g transform="translate(6, -3) rotate(10)">
+        <rect x="-2.5" y="-18" width="5" height="36" rx="1" ry="1" fill="url(#fryGradient)" />
+        <rect x="-1" y="-16" width="2" height="32" rx="0.5" ry="0.5" fill="url(#fryInnerGradient)" opacity="0.7" />
+        <rect x="-2.5" y="-18" width="5" height="36" rx="1" ry="1" fill="url(#crispyPattern)" />
+        <rect x="-2.5" y="-18" width="5" height="2.5" rx="1" ry="1" fill="url(#fryEndGradient)" />
+        <rect x="-2.5" y="15.5" width="5" height="2.5" rx="1" ry="1" fill="url(#fryEndGradient)" />
+      </g>
+      
+      <!-- Fry 3 -->
+      <g transform="translate(-8, 1) rotate(-15)">
+        <rect x="-2" y="-20" width="4" height="40" rx="1" ry="1" fill="url(#fryGradient)" />
+        <rect x="-1" y="-18" width="2" height="36" rx="0.5" ry="0.5" fill="url(#fryInnerGradient)" opacity="0.7" />
+        <rect x="-2" y="-20" width="4" height="40" rx="1" ry="1" fill="url(#crispyPattern)" />
+        <rect x="-2" y="-20" width="4" height="2" rx="1" ry="1" fill="url(#fryEndGradient)" />
+        <rect x="-2" y="18" width="4" height="2" rx="1" ry="1" fill="url(#fryEndGradient)" />
+      </g>
+    </g>
+    
+    <!-- Fry Group 3 (Right Side) -->
+    <g transform="translate(115, 100) rotate(15)">
+      <!-- Fry 1 -->
+      <g transform="rotate(-10)">
+        <rect x="-3" y="-20" width="6" height="40" rx="1" ry="1" fill="url(#fryGradient)" />
+        <rect x="-1.5" y="-18" width="3" height="36" rx="0.5" ry="0.5" fill="url(#fryInnerGradient)" opacity="0.7" />
+        <rect x="-3" y="-20" width="6" height="40" rx="1" ry="1" fill="url(#crispyPattern)" />
+        <rect x="-3" y="-20" width="6" height="3" rx="1" ry="1" fill="url(#fryEndGradient)" />
+        <rect x="-3" y="17" width="6" height="3" rx="1" ry="1" fill="url(#fryEndGradient)" />
+      </g>
+      
+      <!-- Fry 2 -->
+      <g transform="translate(7, -2) rotate(-25)">
+        <rect x="-2.5" y="-16" width="5" height="32" rx="1" ry="1" fill="url(#fryGradient)" />
+        <rect x="-1" y="-14" width="2" height="28" rx="0.5" ry="0.5" fill="url(#fryInnerGradient)" opacity="0.7" />
+        <rect x="-2.5" y="-16" width="5" height="32" rx="1" ry="1" fill="url(#crispyPattern)" />
+        <rect x="-2.5" y="-16" width="5" height="2.5" rx="1" ry="1" fill="url(#fryEndGradient)" />
+        <rect x="-2.5" y="13.5" width="5" height="2.5" rx="1" ry="1" fill="url(#fryEndGradient)" />
+      </g>
+      
+      <!-- Fry 3 -->
+      <g transform="translate(12, 5) rotate(-40)">
+        <rect x="-2" y="-15" width="4" height="30" rx="1" ry="1" fill="url(#fryGradient)" />
+        <rect x="-1" y="-13" width="2" height="26" rx="0.5" ry="0.5" fill="url(#fryInnerGradient)" opacity="0.7" />
+        <rect x="-2" y="-15" width="4" height="30" rx="1" ry="1" fill="url(#crispyPattern)" />
+        <rect x="-2" y="-15" width="4" height="2" rx="1" ry="1" fill="url(#fryEndGradient)" />
+        <rect x="-2" y="13" width="4" height="2" rx="1" ry="1" fill="url(#fryEndGradient)" />
+      </g>
+    </g>
+    
+    <!-- Extra Fries Peeking Out -->
+    <g transform="translate(100, 85) rotate(0)">
+      <!-- Extra Fry 1 -->
+      <g transform="rotate(-30)">
+        <rect x="-2" y="-25" width="4" height="25" rx="1" ry="1" fill="url(#fryGradient)" />
+        <rect x="-1" y="-23" width="2" height="21" rx="0.5" ry="0.5" fill="url(#fryInnerGradient)" opacity="0.7" />
+        <rect x="-2" y="-25" width="4" height="25" rx="1" ry="1" fill="url(#crispyPattern)" />
+        <rect x="-2" y="-25" width="4" height="2" rx="1" ry="1" fill="url(#fryEndGradient)" />
+      </g>
+      
+      <!-- Extra Fry 2 -->
+      <g transform="translate(10, 2) rotate(0)">
+        <rect x="-1.5" y="-20" width="3" height="20" rx="1" ry="1" fill="url(#fryGradient)" />
+        <rect x="-0.75" y="-18" width="1.5" height="16" rx="0.5" ry="0.5" fill="url(#fryInnerGradient)" opacity="0.7" />
+        <rect x="-1.5" y="-20" width="3" height="20" rx="1" ry="1" fill="url(#crispyPattern)" />
+        <rect x="-1.5" y="-20" width="3" height="1.5" rx="1" ry="1" fill="url(#fryEndGradient)" />
+      </g>
+      
+      <!-- Extra Fry 3 -->
+      <g transform="translate(-12, 5) rotate(20)">
+        <rect x="-1.5" y="-18" width="3" height="18" rx="1" ry="1" fill="url(#fryGradient)" />
+        <rect x="-0.75" y="-16" width="1.5" height="14" rx="0.5" ry="0.5" fill="url(#fryInnerGradient)" opacity="0.7" />
+        <rect x="-1.5" y="-18" width="3" height="18" rx="1" ry="1" fill="url(#crispyPattern)" />
+        <rect x="-1.5" y="-18" width="3" height="1.5" rx="1" ry="1" fill="url(#fryEndGradient)" />
+      </g>
+    </g>
+  </g>
+  
+  <!-- Salt Sprinkles -->
+  <g>
+    <circle cx="85" cy="95" r="0.5" fill="url(#saltGradient)" />
+    <circle cx="105" cy="90" r="0.6" fill="url(#saltGradient)" />
+    <circle cx="115" cy="98" r="0.4" fill="url(#saltGradient)" />
+    <circle cx="92" cy="105" r="0.5" fill="url(#saltGradient)" />
+    <circle cx="78" cy="100" r="0.4" fill="url(#saltGradient)" />
+    <circle cx="110" cy="107" r="0.7" fill="url(#saltGradient)" />
+    <circle cx="120" cy="102" r="0.5" fill="url(#saltGradient)" />
+  </g>
+  
+  <!-- Oil Shine -->
+  <g>
+    <ellipse cx="90" cy="95" rx="5" ry="2" fill="url(#oilShineGradient)" />
+    <ellipse cx="105" cy="100" rx="4" ry="1.5" fill="url(#oilShineGradient)" />
+    <ellipse cx="115" cy="95" rx="3" ry="1" fill="url(#oilShineGradient)" />
+  </g>
+  
+  <!-- Ketchup Dipping Cup -->
+  <g filter="url(#dropShadow)" transform="translate(150, 150)">
+    <!-- Cup Body -->
+    <path d="M-10,0 
+            C-12,-10 -5,-15 0,-15 
+            C5,-15 12,-10 10,0 
+            Z" 
+          fill="#FFFFFF" />
+    
+    <!-- Cup Rim -->
+    <path d="M-10,0 
+            C-12,-10 -5,-15 0,-15 
+            C5,-15 12,-10 10,0 
+            Z" 
+          fill="none" 
+          stroke="#E0E0E0" 
+          stroke-width="0.7" />
+    
+    <!-- Ketchup -->
+    <path d="M-8,-2 
+            C-10,-8 -4,-12 0,-12 
+            C4,-12 10,-8 8,-2 
+            Z" 
+          fill="url(#ketchupGradient)" />
+    
+    <!-- Ketchup Surface Highlight -->
+    <ellipse cx="0" cy="-7" rx="5" ry="2" fill="#FFFFFF" opacity="0.2" />
+  </g>
+  
+  <!-- Loose Fry -->
+  <g filter="url(#softShadow)" transform="translate(45, 150) rotate(45)">
+    <rect x="-2" y="-15" width="4" height="30" rx="1" ry="1" fill="url(#fryGradient)" />
+    <rect x="-1" y="-13" width="2" height="26" rx="0.5" ry="0.5" fill="url(#fryInnerGradient)" opacity="0.7" />
+    <rect x="-2" y="-15" width="4" height="30" rx="1" ry="1" fill="url(#crispyPattern)" />
+    <rect x="-2" y="-15" width="4" height="2" rx="1" ry="1" fill="url(#fryEndGradient)" />
+    <rect x="-2" y="13" width="4" height="2" rx="1" ry="1" fill="url(#fryEndGradient)" />
+  </g>
+</svg> 

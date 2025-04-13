@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Wooden Table -->
+    <linearGradient id="woodGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8B5A2B" />
+      <stop offset="20%" stop-color="#A67C52" />
+      <stop offset="40%" stop-color="#8B5A2B" />
+      <stop offset="60%" stop-color="#A67C52" />
+      <stop offset="80%" stop-color="#8B5A2B" />
+      <stop offset="100%" stop-color="#A67C52" />
+    </linearGradient>
+    
+    <!-- Plate Gradient -->
+    <linearGradient id="plateGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#E0E0E0" />
+    </linearGradient>
+    
+    <!-- Bottom Bun Gradient -->
+    <linearGradient id="bottomBunGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F5D0A0" />
+      <stop offset="100%" stop-color="#E0B070" />
+    </linearGradient>
+    
+    <!-- Bottom Bun Edge Gradient -->
+    <linearGradient id="bottomBunEdgeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E0B070" />
+      <stop offset="100%" stop-color="#C69050" />
+    </linearGradient>
+    
+    <!-- Tomato Gradient - Enhanced -->
+    <linearGradient id="tomatoGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FF6347" />
+      <stop offset="100%" stop-color="#E74C3C" />
+    </linearGradient>
+    
+    <!-- Tomato Shine -->
+    <radialGradient id="tomatoShine" cx="30%" cy="30%" r="50%" fx="20%" fy="20%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+    </radialGradient>
+    
+    <!-- Lettuce Gradient - Enhanced -->
+    <linearGradient id="lettuceGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#A8D751" />
+      <stop offset="100%" stop-color="#7CB518" />
+    </linearGradient>
+    
+    <!-- Lettuce Vein Gradient -->
+    <linearGradient id="lettuceVeinGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8BC34A" />
+      <stop offset="100%" stop-color="#689F38" />
+    </linearGradient>
+    
+    <!-- Patty Gradient - Enhanced for Mountain style -->
+    <linearGradient id="pattyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8D3C16" />
+      <stop offset="100%" stop-color="#5E2200" />
+    </linearGradient>
+    
+    <!-- Patty Texture Gradient -->
+    <radialGradient id="pattyTextureGradient" cx="50%" cy="50%" r="50%" fx="30%" fy="30%">
+      <stop offset="0%" stop-color="#9A3220" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#602000" stop-opacity="0" />
+    </radialGradient>
+    
+    <!-- Mountain Cheese Gradient - Enhanced -->
+    <linearGradient id="cheeseGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FCFCFC" />
+      <stop offset="100%" stop-color="#F0F0F0" />
+    </linearGradient>
+    
+    <!-- Cheese Shine Gradient -->
+    <radialGradient id="cheeseShine" cx="40%" cy="40%" r="60%" fx="30%" fy="30%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#FCFCFC" stop-opacity="0" />
+    </radialGradient>
+    
+    <!-- Mountain Herb Gradient - Enhanced -->
+    <linearGradient id="herbGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4DAF50" />
+      <stop offset="100%" stop-color="#2E7D32" />
+    </linearGradient>
+    
+    <!-- Pepper Flakes Gradient - Enhanced -->
+    <linearGradient id="pepperGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F44336" />
+      <stop offset="100%" stop-color="#D32F2F" />
+    </linearGradient>
+    
+    <!-- Top Bun Gradient -->
+    <linearGradient id="topBunGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F5D0A0" />
+      <stop offset="100%" stop-color="#E0B070" />
+    </linearGradient>
+    
+    <!-- Top Bun Edge Gradient -->
+    <linearGradient id="topBunEdgeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E8C090" />
+      <stop offset="100%" stop-color="#D0A060" />
+    </linearGradient>
+    
+    <!-- Top Bun Highlight -->
+    <radialGradient id="topBunHighlight" cx="40%" cy="40%" r="60%" fx="40%" fy="40%">
+      <stop offset="0%" stop-color="#FFF0D0" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#F5D0A0" stop-opacity="0" />
+    </radialGradient>
+    
+    <!-- Sesame Seed Gradient - Enhanced -->
+    <linearGradient id="sesameGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF8E1" />
+      <stop offset="100%" stop-color="#FFE0B2" />
+    </linearGradient>
+    
+    <!-- Mountain Spice Blend Gradient -->
+    <linearGradient id="spiceBlendGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8B4513" />
+      <stop offset="100%" stop-color="#654321" />
+    </linearGradient>
+    
+    <!-- Drop Shadow -->
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2" />
+      <feOffset dx="0" dy="2" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    
+    <!-- Inner Shadow -->
+    <filter id="innerShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="1" result="blur" />
+      <feOffset dx="0" dy="1" />
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.3 0" />
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    
+    <!-- Meat Texture - Enhanced for Mountain style -->
+    <pattern id="meatPattern" width="10" height="10" patternUnits="userSpaceOnUse">
+      <rect width="10" height="10" fill="url(#pattyGradient)" />
+      <circle cx="2" cy="2" r="1" fill="#500000" opacity="0.6" />
+      <circle cx="7" cy="8" r="1.5" fill="#500000" opacity="0.4" />
+      <circle cx="5" cy="4" r="0.8" fill="#7F3300" opacity="0.4" />
+    </pattern>
+    
+    <!-- Mountain Herbs Pattern -->
+    <pattern id="herbPattern" width="12" height="12" patternUnits="userSpaceOnUse">
+      <rect width="12" height="12" fill="transparent" />
+      <path d="M2,6 L4,4 L6,6 L5,2" stroke="#388E3C" stroke-width="0.5" fill="none" />
+      <path d="M8,8 L10,6 L12,8 L11,4" stroke="#388E3C" stroke-width="0.5" fill="none" />
+    </pattern>
+  </defs>
+  
+  <!-- Wooden Table Background -->
+  <rect x="0" y="175" width="200" height="25" fill="url(#woodGradient)" />
+  
+  <!-- Plate with Shadow -->
+  <ellipse cx="100" cy="165" rx="85" ry="20" fill="url(#plateGradient)" filter="url(#dropShadow)" />
+  
+  <!-- Bottom Bun -->
+  <g filter="url(#dropShadow)">
+    <ellipse cx="100" cy="150" rx="70" ry="15" fill="url(#bottomBunGradient)" />
+    <path d="M40,145 C50,150 75,155 100,155 C125,155 150,150 160,145 C150,140 125,135 100,135 C75,135 50,140 40,145 Z" fill="url(#bottomBunEdgeGradient)" />
+  </g>
+  
+  <!-- Lettuce - Enhanced -->
+  <g filter="url(#dropShadow)">
+    <path d="M45,138 C55,143 65,136 75,142 C85,148 95,140 105,143 C115,146 125,138 135,142 C145,146 155,138 165,142" fill="none" stroke="url(#lettuceGradient)" stroke-width="8" stroke-linecap="round" />
+    <path d="M50,136 C60,140 70,133 80,139 C90,145 100,137 110,140 C120,143 130,135 140,139 C150,143 160,135 170,139" fill="none" stroke="url(#lettuceGradient)" stroke-width="6" stroke-linecap="round" opacity="0.8" />
+    
+    <!-- Lettuce Veins -->
+    <path d="M55,136 C57,138 59,136 61,138" stroke="url(#lettuceVeinGradient)" stroke-width="0.5" fill="none" />
+    <path d="M75,140 C77,142 79,140 81,142" stroke="url(#lettuceVeinGradient)" stroke-width="0.5" fill="none" />
+    <path d="M95,138 C97,140 99,138 101,140" stroke="url(#lettuceVeinGradient)" stroke-width="0.5" fill="none" />
+    <path d="M115,140 C117,142 119,140 121,142" stroke="url(#lettuceVeinGradient)" stroke-width="0.5" fill="none" />
+    <path d="M135,138 C137,140 139,138 141,140" stroke="url(#lettuceVeinGradient)" stroke-width="0.5" fill="none" />
+  </g>
+  
+  <!-- Tomato Slices - Enhanced -->
+  <g filter="url(#dropShadow)">
+    <ellipse cx="80" cy="130" rx="25" ry="5" fill="url(#tomatoGradient)" />
+    <ellipse cx="80" cy="130" rx="20" ry="4" fill="#FF7F50" opacity="0.7" />
+    <ellipse cx="80" cy="130" rx="15" ry="3" fill="#FF6347" opacity="0.7" />
+    <ellipse cx="80" cy="130" rx="8" ry="1.5" fill="url(#tomatoShine)" opacity="0.3" />
+    
+    <!-- Tomato Seeds -->
+    <circle cx="75" cy="130" r="0.8" fill="#FFD700" opacity="0.7" />
+    <circle cx="80" cy="129.5" r="0.8" fill="#FFD700" opacity="0.7" />
+    <circle cx="85" cy="130" r="0.8" fill="#FFD700" opacity="0.7" />
+    <circle cx="78" cy="131" r="0.8" fill="#FFD700" opacity="0.7" />
+    <circle cx="82" cy="131" r="0.8" fill="#FFD700" opacity="0.7" />
+    
+    <ellipse cx="120" cy="130" rx="25" ry="5" fill="url(#tomatoGradient)" />
+    <ellipse cx="120" cy="130" rx="20" ry="4" fill="#FF7F50" opacity="0.7" />
+    <ellipse cx="120" cy="130" rx="15" ry="3" fill="#FF6347" opacity="0.7" />
+    <ellipse cx="120" cy="130" rx="8" ry="1.5" fill="url(#tomatoShine)" opacity="0.3" />
+    
+    <!-- Tomato Seeds -->
+    <circle cx="115" cy="130" r="0.8" fill="#FFD700" opacity="0.7" />
+    <circle cx="120" cy="129.5" r="0.8" fill="#FFD700" opacity="0.7" />
+    <circle cx="125" cy="130" r="0.8" fill="#FFD700" opacity="0.7" />
+    <circle cx="118" cy="131" r="0.8" fill="#FFD700" opacity="0.7" />
+    <circle cx="122" cy="131" r="0.8" fill="#FFD700" opacity="0.7" />
+  </g>
+  
+  <!-- Mountain-Style Patty (thicker) - Enhanced -->
+  <g filter="url(#dropShadow)">
+    <ellipse cx="100" cy="115" rx="65" ry="18" fill="url(#pattyGradient)" />
+    <ellipse cx="100" cy="115" rx="65" ry="18" fill="url(#meatPattern)" opacity="0.9" />
+    <ellipse cx="100" cy="115" rx="60" ry="16" fill="url(#herbPattern)" opacity="0.2" />
+    
+    <!-- Patty Texture Details - Enhanced -->
+    <ellipse cx="75" cy="113" rx="18" ry="6" fill="url(#pattyTextureGradient)" opacity="0.7" />
+    <ellipse cx="125" cy="117" rx="18" ry="6" fill="url(#pattyTextureGradient)" opacity="0.7" />
+    <ellipse cx="100" cy="115" rx="15" ry="5" fill="url(#pattyTextureGradient)" opacity="0.7" />
+    <ellipse cx="60" cy="115" rx="12" ry="4" fill="url(#pattyTextureGradient)" opacity="0.7" />
+    <ellipse cx="140" cy="115" rx="12" ry="4" fill="url(#pattyTextureGradient)" opacity="0.7" />
+    
+    <!-- Seared Edges - Enhanced -->
+    <path d="M40,115 C55,123 75,128 100,128 C125,128 145,123 160,115" stroke="#3A1000" stroke-width="5" fill="none" opacity="0.7" />
+    <path d="M40,115 C55,107 75,102 100,102 C125,102 145,107 160,115" stroke="#3A1000" stroke-width="5" fill="none" opacity="0.7" />
+    
+    <!-- Mountain Spice Blend Sprinkles -->
+    <g opacity="0.6">
+      <circle cx="75" cy="110" r="1" fill="url(#spiceBlendGradient)" />
+      <circle cx="85" cy="113" r="0.8" fill="url(#spiceBlendGradient)" />
+      <circle cx="95" cy="110" r="0.9" fill="url(#spiceBlendGradient)" />
+      <circle cx="105" cy="112" r="0.7" fill="url(#spiceBlendGradient)" />
+      <circle cx="115" cy="110" r="1" fill="url(#spiceBlendGradient)" />
+      <circle cx="125" cy="114" r="0.8" fill="url(#spiceBlendGradient)" />
+    </g>
+  </g>
+  
+  <!-- Mountain Cheese (Feta style) - Enhanced -->
+  <g filter="url(#dropShadow)">
+    <!-- Breaking up the single large cheese ellipse into several irregular chunks -->
+    <path d="M65,95 C70,93 80,91 90,96 C100,98 110,97 120,95 C130,92 140,93 145,96 C135,98 125,99 115,96 C105,94 95,95 85,98 C75,100 70,98 65,95 Z" fill="url(#cheeseGradient)" />
+    <path d="M70,92 C75,90 85,89 95,92 C105,94 115,93 125,91 C135,89 140,90 145,92 C135,94 125,95 115,93 C105,91 95,92 85,94 C75,96 72,94 70,92 Z" fill="url(#cheeseGradient)" opacity="0.8" />
+    
+    <!-- More natural cheese chunks scattered around -->
+    <path d="M60,96 C63,94 67,93 70,96 C73,98 72,100 68,101 C64,102 57,100 60,96 Z" fill="url(#cheeseGradient)" />
+    <path d="M80,91 C83,89 87,88 90,91 C93,93 92,95 88,96 C84,97 77,95 80,91 Z" fill="url(#cheeseGradient)" />
+    <path d="M105,89 C108,87 112,86 115,89 C118,91 117,93 113,94 C109,95 102,93 105,89 Z" fill="url(#cheeseGradient)" />
+    <path d="M130,93 C133,91 137,90 140,93 C143,95 142,97 138,98 C134,99 127,97 130,93 Z" fill="url(#cheeseGradient)" />
+    
+    <!-- Cheese Crumbles - Enhanced with more varied shapes -->
+    <ellipse cx="70" cy="95" rx="6" ry="2.5" fill="url(#cheeseGradient)" transform="rotate(-10,70,95)" />
+    <ellipse cx="70" cy="95" rx="3" ry="1.5" fill="url(#cheeseShine)" opacity="0.4" />
+    
+    <ellipse cx="85" cy="93" rx="5" ry="2.5" fill="url(#cheeseGradient)" transform="rotate(15,85,93)" />
+    <ellipse cx="85" cy="93" rx="2.5" ry="1.5" fill="url(#cheeseShine)" opacity="0.4" />
+    
+    <ellipse cx="100" cy="91" rx="6" ry="2.5" fill="url(#cheeseGradient)" />
+    <ellipse cx="100" cy="91" rx="3" ry="1.5" fill="url(#cheeseShine)" opacity="0.4" />
+    
+    <ellipse cx="115" cy="93" rx="5" ry="2.5" fill="url(#cheeseGradient)" transform="rotate(-15,115,93)" />
+    <ellipse cx="115" cy="93" rx="2.5" ry="1.5" fill="url(#cheeseShine)" opacity="0.4" />
+    
+    <ellipse cx="130" cy="95" rx="6" ry="2.5" fill="url(#cheeseGradient)" transform="rotate(10,130,95)" />
+    <ellipse cx="130" cy="95" rx="3" ry="1.5" fill="url(#cheeseShine)" opacity="0.4" />
+    
+    <!-- Additional Cheese Crumbles with more texture -->
+    <ellipse cx="77" cy="97" rx="4" ry="2" fill="url(#cheeseGradient)" transform="rotate(5,77,97)" />
+    <ellipse cx="92" cy="96" rx="3.5" ry="1.8" fill="url(#cheeseGradient)" transform="rotate(-8,92,96)" />
+    <ellipse cx="107" cy="95" rx="4" ry="2" fill="url(#cheeseGradient)" transform="rotate(12,107,95)" />
+    <ellipse cx="122" cy="97" rx="3.5" ry="1.8" fill="url(#cheeseGradient)" transform="rotate(-5,122,97)" />
+    
+    <!-- Cheese texture elements -->
+    <path d="M75,94 L78,93" stroke="#EFEFEF" stroke-width="0.5" fill="none" />
+    <path d="M85,92 L88,91" stroke="#EFEFEF" stroke-width="0.5" fill="none" />
+    <path d="M95,90 L98,91" stroke="#EFEFEF" stroke-width="0.5" fill="none" />
+    <path d="M105,92 L108,91" stroke="#EFEFEF" stroke-width="0.5" fill="none" />
+    <path d="M115,94 L118,93" stroke="#EFEFEF" stroke-width="0.5" fill="none" />
+    <path d="M125,93 L128,94" stroke="#EFEFEF" stroke-width="0.5" fill="none" />
+    
+    <!-- Cheese-meat integration spots -->
+    <ellipse cx="70" cy="100" rx="3" ry="1.5" fill="url(#pattyTextureGradient)" opacity="0.3" />
+    <ellipse cx="90" cy="99" rx="3" ry="1.5" fill="url(#pattyTextureGradient)" opacity="0.3" />
+    <ellipse cx="110" cy="98" rx="3" ry="1.5" fill="url(#pattyTextureGradient)" opacity="0.3" />
+    <ellipse cx="130" cy="99" rx="3" ry="1.5" fill="url(#pattyTextureGradient)" opacity="0.3" />
+  </g>
+  
+  <!-- Mountain Herbs (Thyme, Rosemary) - Enhanced -->
+  <g filter="url(#dropShadow)">
+    <!-- Thyme Sprigs -->
+    <path d="M60,85 C58,82 60,80 62,81 C64,82 65,84 63,85 C62,86 61,86 60,85" fill="url(#herbGradient)" />
+    <path d="M60,85 C59,84 58,83 59,82" stroke="#2E7D32" stroke-width="0.5" fill="none" />
+    
+    <path d="M80,83 C78,80 80,78 82,79 C84,80 85,82 83,83 C82,84 81,84 80,83" fill="url(#herbGradient)" />
+    <path d="M80,83 C79,82 78,81 79,80" stroke="#2E7D32" stroke-width="0.5" fill="none" />
+    
+    <path d="M100,82 C98,79 100,77 102,78 C104,79 105,81 103,82 C102,83 101,83 100,82" fill="url(#herbGradient)" />
+    <path d="M100,82 C99,81 98,80 99,79" stroke="#2E7D32" stroke-width="0.5" fill="none" />
+    
+    <path d="M120,83 C118,80 120,78 122,79 C124,80 125,82 123,83 C122,84 121,84 120,83" fill="url(#herbGradient)" />
+    <path d="M120,83 C119,82 118,81 119,80" stroke="#2E7D32" stroke-width="0.5" fill="none" />
+    
+    <path d="M140,85 C138,82 140,80 142,81 C144,82 145,84 143,85 C142,86 141,86 140,85" fill="url(#herbGradient)" />
+    <path d="M140,85 C139,84 138,83 139,82" stroke="#2E7D32" stroke-width="0.5" fill="none" />
+    
+    <!-- Rosemary Sprigs -->
+    <path d="M65,80 L68,76" stroke="#388E3C" stroke-width="0.5" fill="none" />
+    <path d="M66,79 L67,78 L68,79" stroke="#388E3C" stroke-width="0.3" fill="none" />
+    <path d="M67,77 L68,76 L69,77" stroke="#388E3C" stroke-width="0.3" fill="none" />
+    
+    <path d="M85,78 L88,74" stroke="#388E3C" stroke-width="0.5" fill="none" />
+    <path d="M86,77 L87,76 L88,77" stroke="#388E3C" stroke-width="0.3" fill="none" />
+    <path d="M87,75 L88,74 L89,75" stroke="#388E3C" stroke-width="0.3" fill="none" />
+    
+    <path d="M105,77 L108,73" stroke="#388E3C" stroke-width="0.5" fill="none" />
+    <path d="M106,76 L107,75 L108,76" stroke="#388E3C" stroke-width="0.3" fill="none" />
+    <path d="M107,74 L108,73 L109,74" stroke="#388E3C" stroke-width="0.3" fill="none" />
+    
+    <path d="M125,78 L128,74" stroke="#388E3C" stroke-width="0.5" fill="none" />
+    <path d="M126,77 L127,76 L128,77" stroke="#388E3C" stroke-width="0.3" fill="none" />
+    <path d="M127,75 L128,74 L129,75" stroke="#388E3C" stroke-width="0.3" fill="none" />
+    
+    <path d="M145,80 L148,76" stroke="#388E3C" stroke-width="0.5" fill="none" />
+    <path d="M146,79 L147,78 L148,79" stroke="#388E3C" stroke-width="0.3" fill="none" />
+    <path d="M147,77 L148,76 L149,77" stroke="#388E3C" stroke-width="0.3" fill="none" />
+  </g>
+  
+  <!-- Red Pepper Flakes - Enhanced -->
+  <g filter="url(#innerShadow)">
+    <ellipse cx="75" cy="85" rx="2.5" ry="1.2" fill="url(#pepperGradient)" transform="rotate(-5,75,85)" />
+    <ellipse cx="95" cy="83" rx="2.5" ry="1.2" fill="url(#pepperGradient)" transform="rotate(10,95,83)" />
+    <ellipse cx="115" cy="83" rx="2.5" ry="1.2" fill="url(#pepperGradient)" transform="rotate(-10,115,83)" />
+    <ellipse cx="135" cy="85" rx="2.5" ry="1.2" fill="url(#pepperGradient)" transform="rotate(5,135,85)" />
+    
+    <ellipse cx="65" cy="80" rx="2.5" ry="1.2" fill="url(#pepperGradient)" transform="rotate(15,65,80)" />
+    <ellipse cx="85" cy="78" rx="2.5" ry="1.2" fill="url(#pepperGradient)" transform="rotate(-5,85,78)" />
+    <ellipse cx="105" cy="78" rx="2.5" ry="1.2" fill="url(#pepperGradient)" transform="rotate(5,105,78)" />
+    <ellipse cx="125" cy="80" rx="2.5" ry="1.2" fill="url(#pepperGradient)" transform="rotate(-15,125,80)" />
+    
+    <!-- Additional Pepper Flakes -->
+    <ellipse cx="70" cy="88" rx="1.8" ry="0.9" fill="url(#pepperGradient)" transform="rotate(20,70,88)" />
+    <ellipse cx="90" cy="86" rx="1.8" ry="0.9" fill="url(#pepperGradient)" transform="rotate(-8,90,86)" />
+    <ellipse cx="110" cy="86" rx="1.8" ry="0.9" fill="url(#pepperGradient)" transform="rotate(12,110,86)" />
+    <ellipse cx="130" cy="88" rx="1.8" ry="0.9" fill="url(#pepperGradient)" transform="rotate(-20,130,88)" />
+  </g>
+  
+  <!-- Top Bun - Enhanced -->
+  <g filter="url(#dropShadow)">
+    <!-- Top Bun Main -->
+    <ellipse cx="100" cy="60" rx="65" ry="20" fill="url(#topBunGradient)" />
+    
+    <!-- Top Bun Curved Bottom Edge -->
+    <path d="M45,75 C55,70 75,68 100,68 C125,68 145,70 155,75 C145,80 125,82 100,82 C75,82 55,80 45,75 Z" fill="url(#topBunEdgeGradient)" />
+    
+    <!-- Top Bun Dome -->
+    <path d="M45,60 C45,45 65,35 100,35 C135,35 155,45 155,60 C155,75 135,80 100,80 C65,80 45,75 45,60 Z" fill="url(#topBunGradient)" />
+    
+    <!-- Top Bun Highlight -->
+    <ellipse cx="90" cy="45" rx="40" ry="15" fill="url(#topBunHighlight)" />
+    
+    <!-- Sesame Seeds - Enhanced -->
+    <ellipse cx="70" cy="50" rx="3.5" ry="2.2" fill="url(#sesameGradient)" transform="rotate(-15,70,50)" />
+    <ellipse cx="90" cy="45" rx="3.5" ry="2.2" fill="url(#sesameGradient)" transform="rotate(10,90,45)" />
+    <ellipse cx="110" cy="45" rx="3.5" ry="2.2" fill="url(#sesameGradient)" transform="rotate(-10,110,45)" />
+    <ellipse cx="130" cy="50" rx="3.5" ry="2.2" fill="url(#sesameGradient)" transform="rotate(15,130,50)" />
+    <ellipse cx="80" cy="55" rx="3.5" ry="2.2" fill="url(#sesameGradient)" transform="rotate(5,80,55)" />
+    <ellipse cx="120" cy="55" rx="3.5" ry="2.2" fill="url(#sesameGradient)" transform="rotate(-5,120,55)" />
+    <ellipse cx="100" cy="40" rx="3.5" ry="2.2" fill="url(#sesameGradient)" />
+    
+    <!-- Additional Sesame Seeds -->
+    <ellipse cx="65" cy="60" rx="3" ry="1.8" fill="url(#sesameGradient)" transform="rotate(-10,65,60)" />
+    <ellipse cx="85" cy="50" rx="3" ry="1.8" fill="url(#sesameGradient)" transform="rotate(5,85,50)" />
+    <ellipse cx="105" cy="50" rx="3" ry="1.8" fill="url(#sesameGradient)" transform="rotate(-5,105,50)" />
+    <ellipse cx="125" cy="60" rx="3" ry="1.8" fill="url(#sesameGradient)" transform="rotate(10,125,60)" />
+    <ellipse cx="95" cy="60" rx="3" ry="1.8" fill="url(#sesameGradient)" transform="rotate(-15,95,60)" />
+  </g>
+  
+  <!-- Highlights -->
+  <ellipse cx="85" cy="115" rx="12" ry="5" fill="#FFFFFF" opacity="0.1" />
+  <ellipse cx="115" cy="117" rx="14" ry="4" fill="#FFFFFF" opacity="0.1" />
+  <ellipse cx="70" cy="95" rx="4" ry="1.5" fill="#FFFFFF" opacity="0.2" />
+  <ellipse cx="115" cy="93" rx="3" ry="1.5" fill="#FFFFFF" opacity="0.2" />
+  
+  <!-- Steam Effect - Enhanced -->
+  <g opacity="0.4">
+    <path d="M70,35 Q75,30 80,35 Q85,40 90,30" stroke="#FFFFFF" stroke-width="1.2" fill="none" />
+    <path d="M100,30 Q105,25 110,30 Q115,35 120,25" stroke="#FFFFFF" stroke-width="1.2" fill="none" />
+    <path d="M85,25 Q90,20 95,25 Q100,30 105,20" stroke="#FFFFFF" stroke-width="1.2" fill="none" />
+  </g>
+  
+  <!-- Mountain Aroma Effect -->
+  <g opacity="0.15">
+    <path d="M65,35 Q68,33 70,35 Q72,37 75,34" stroke="#4DAF50" stroke-width="0.8" fill="none" />
+    <path d="M95,32 Q98,30 100,32 Q102,34 105,31" stroke="#4DAF50" stroke-width="0.8" fill="none" />
+    <path d="M125,35 Q128,33 130,35 Q132,37 135,34" stroke="#4DAF50" stroke-width="0.8" fill="none" />
+  </g>
+</svg>

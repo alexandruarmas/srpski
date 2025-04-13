@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Wooden Table -->
+    <linearGradient id="woodGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7D512A" />
+      <stop offset="20%" stop-color="#9E7553" />
+      <stop offset="40%" stop-color="#8B5A2B" />
+      <stop offset="60%" stop-color="#A67C52" />
+      <stop offset="80%" stop-color="#7D512A" />
+      <stop offset="100%" stop-color="#9E7553" />
+    </linearGradient>
+    
+    <!-- Plate Gradient -->
+    <radialGradient id="plateGradient" cx="50%" cy="40%" r="60%" fx="40%" fy="40%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="70%" stop-color="#F8F8F8" />
+      <stop offset="100%" stop-color="#E8E8E8" />
+    </radialGradient>
+    
+    <!-- Lepinja (Flatbread) Gradient -->
+    <radialGradient id="breadGradient" cx="50%" cy="50%" r="70%" fx="40%" fy="40%">
+      <stop offset="0%" stop-color="#F9E3C0" />
+      <stop offset="50%" stop-color="#F2D4A7" />
+      <stop offset="100%" stop-color="#E0B070" />
+    </radialGradient>
+    
+    <!-- Flatbread Edge Gradient -->
+    <linearGradient id="breadEdgeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E0B070" />
+      <stop offset="100%" stop-color="#C69050" />
+    </linearGradient>
+    
+    <!-- Flatbread Inner Gradient -->
+    <radialGradient id="breadInnerGradient" cx="50%" cy="50%" r="70%" fx="40%" fy="40%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="60%" stop-color="#F9E3C0" />
+      <stop offset="100%" stop-color="#F2D4A7" />
+    </radialGradient>
+    
+    <!-- Onion Gradient -->
+    <linearGradient id="onionGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FF7878" />
+      <stop offset="60%" stop-color="#FF5252" />
+      <stop offset="100%" stop-color="#D50000" />
+    </linearGradient>
+    
+    <!-- Meat Gradient -->
+    <linearGradient id="meatGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8B4513" />
+      <stop offset="50%" stop-color="#703010" />
+      <stop offset="100%" stop-color="#602000" />
+    </linearGradient>
+    
+    <!-- Kajmak Gradient -->
+    <linearGradient id="kajmakGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFF0" />
+      <stop offset="50%" stop-color="#FFFDE7" />
+      <stop offset="100%" stop-color="#FFF59D" />
+    </linearGradient>
+    
+    <!-- Parsley Gradient -->
+    <linearGradient id="parsleyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#66BB6A" />
+      <stop offset="50%" stop-color="#4CAF50" />
+      <stop offset="100%" stop-color="#2E7D32" />
+    </linearGradient>
+    
+    <!-- Salt Gradient -->
+    <radialGradient id="saltGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F5F5F5" />
+    </radialGradient>
+    
+    <!-- Pepper Gradient -->
+    <radialGradient id="pepperGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#424242" />
+      <stop offset="100%" stop-color="#212121" />
+    </radialGradient>
+    
+    <!-- Drop Shadow -->
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="1.5" />
+      <feOffset dx="0" dy="1.5" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.35" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    
+    <!-- Plate Highlight -->
+    <filter id="plateHighlight" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="0.5" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.15" />
+      </feComponentTransfer>
+      <feComposite in="SourceGraphic" />
+    </filter>
+    
+    <!-- Meat Texture -->
+    <pattern id="meatPattern" width="10" height="10" patternUnits="userSpaceOnUse">
+      <rect width="10" height="10" fill="url(#meatGradient)" />
+      <circle cx="2" cy="2" r="1" fill="#500000" opacity="0.5" />
+      <circle cx="7" cy="8" r="1.5" fill="#500000" opacity="0.3" />
+      <circle cx="4" cy="5" r="0.8" fill="#6B3611" opacity="0.4" />
+    </pattern>
+    
+    <!-- Bread Texture -->
+    <pattern id="breadPattern" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect width="20" height="20" fill="url(#breadGradient)" />
+      <circle cx="5" cy="5" r="1" fill="#C69050" opacity="0.2" />
+      <circle cx="15" cy="15" r="1" fill="#C69050" opacity="0.2" />
+      <circle cx="5" cy="15" r="1" fill="#C69050" opacity="0.2" />
+      <circle cx="15" cy="5" r="1" fill="#C69050" opacity="0.2" />
+      <circle cx="10" cy="10" r="0.8" fill="#C69050" opacity="0.2" />
+    </pattern>
+    
+    <!-- Inner Shadow for Bread -->
+    <filter id="innerShadowBread" x="-50%" y="-50%" width="200%" height="200%">
+      <feOffset dx="0" dy="0" />
+      <feGaussianBlur stdDeviation="1.5" result="offset-blur" />
+      <feComposite operator="out" in="SourceGraphic" in2="offset-blur" result="inverse" />
+      <feFlood flood-color="black" flood-opacity="0.25" result="color" />
+      <feComposite operator="in" in="color" in2="inverse" result="shadow" />
+      <feComposite operator="over" in="shadow" in2="SourceGraphic" />
+    </filter>
+    
+    <!-- Glossy Effect for Meat -->
+    <filter id="glossEffect" x="-10%" y="-10%" width="120%" height="120%">
+      <feSpecularLighting result="specOut" specularExponent="20" lighting-color="white">
+        <fePointLight x="50" y="50" z="200"/>
+      </feSpecularLighting>
+      <feComposite in="specOut" in2="SourceGraphic" operator="arithmetic" k1="0" k2="1" k3="1" k4="0"/>
+    </filter>
+    
+    <!-- Condensation Effect -->
+    <filter id="condensation" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.1" numOctaves="2" seed="0"/>
+      <feDisplacementMap in="SourceGraphic" scale="3"/>
+    </filter>
+  </defs>
+  
+  <!-- Wooden Table Background with Grain -->
+  <rect x="0" y="175" width="200" height="25" fill="url(#woodGradient)" />
+  <path d="M0,180 L200,177 M0,185 L200,188 M0,190 L200,192" stroke="#5D3200" stroke-width="0.3" fill="none" opacity="0.3" />
+  
+  <!-- Plate with Shadow and Rim -->
+  <g>
+    <ellipse cx="100" cy="165" rx="85" ry="20" fill="url(#plateGradient)" filter="url(#dropShadow)" />
+    <ellipse cx="100" cy="165" rx="78" ry="17" fill="none" stroke="#E0E0E0" stroke-width="0.8" />
+    <ellipse cx="85" cy="160" rx="25" ry="7" fill="#FFFFFF" opacity="0.2" filter="url(#plateHighlight)" />
+  </g>
+  
+  <!-- Flatbread (Lepinja) Base -->
+  <g filter="url(#dropShadow)">
+    <ellipse cx="100" cy="150" rx="75" ry="15" fill="url(#breadPattern)" />
+    <ellipse cx="100" cy="150" rx="65" ry="12" fill="url(#breadInnerGradient)" filter="url(#innerShadowBread)" />
+    
+    <!-- Bread Texture Details -->
+    <path d="M50,153 Q65,150 80,153 Q95,156 110,153 Q125,150 140,153 Q155,156 170,153" 
+          stroke="#C69050" stroke-width="0.3" fill="none" opacity="0.5" />
+    <path d="M60,148 Q75,145 90,148 Q105,151 120,148 Q135,145 150,148" 
+          stroke="#C69050" stroke-width="0.3" fill="none" opacity="0.5" />
+    
+    <!-- Air Pockets -->
+    <circle cx="70" cy="148" r="1.2" fill="#E8D0B0" opacity="0.7" />
+    <circle cx="120" cy="152" r="1.0" fill="#E8D0B0" opacity="0.7" />
+    <circle cx="95" cy="147" r="0.8" fill="#E8D0B0" opacity="0.7" />
+    <circle cx="140" cy="149" r="1.2" fill="#E8D0B0" opacity="0.7" />
+    
+    <!-- Bread Indentations where Cevapi will sit -->
+    <ellipse cx="60" cy="145" rx="12" ry="3" fill="#E8D0B0" opacity="0.5" />
+    <ellipse cx="90" cy="146" rx="12" ry="3" fill="#E8D0B0" opacity="0.5" />
+    <ellipse cx="120" cy="144" rx="12" ry="3" fill="#E8D0B0" opacity="0.5" />
+    <ellipse cx="70" cy="135" rx="12" ry="3" fill="#E8D0B0" opacity="0.5" />
+    <ellipse cx="100" cy="137" rx="12" ry="3" fill="#E8D0B0" opacity="0.5" />
+    <ellipse cx="130" cy="136" rx="12" ry="3" fill="#E8D0B0" opacity="0.5" />
+    <ellipse cx="80" cy="125" rx="12" ry="3" fill="#E8D0B0" opacity="0.5" />
+    <ellipse cx="110" cy="126" rx="12" ry="3" fill="#E8D0B0" opacity="0.5" />
+  </g>
+  
+  <!-- Cevapi (Small Grilled Meat Fingers) -->
+  <g filter="url(#dropShadow)">
+    <!-- Shadows beneath cevapi to ground them on the bread -->
+    <ellipse cx="60" cy="145" rx="12" ry="2" fill="#3D1000" opacity="0.3" />
+    <ellipse cx="90" cy="146" rx="12" ry="2" fill="#3D1000" opacity="0.3" />
+    <ellipse cx="120" cy="144" rx="12" ry="2" fill="#3D1000" opacity="0.3" />
+    <ellipse cx="70" cy="135" rx="12" ry="2" fill="#3D1000" opacity="0.3" />
+    <ellipse cx="100" cy="137" rx="12" ry="2" fill="#3D1000" opacity="0.3" />
+    <ellipse cx="130" cy="136" rx="12" ry="2" fill="#3D1000" opacity="0.3" />
+    <ellipse cx="80" cy="125" rx="12" ry="2" fill="#3D1000" opacity="0.3" />
+    <ellipse cx="110" cy="126" rx="12" ry="2" fill="#3D1000" opacity="0.3" />
+    
+    <!-- Row 1 (bottom row) -->
+    <rect x="55" y="139" width="20" height="8" rx="4" ry="4" fill="url(#meatPattern)" transform="rotate(-5,55,139)" />
+    <rect x="85" y="140" width="20" height="8" rx="4" ry="4" fill="url(#meatPattern)" transform="rotate(5,85,140)" />
+    <rect x="115" y="138" width="20" height="8" rx="4" ry="4" fill="url(#meatPattern)" transform="rotate(-3,115,138)" />
+    
+    <!-- Row 2 (middle row) -->
+    <rect x="65" y="130" width="20" height="8" rx="4" ry="4" fill="url(#meatPattern)" transform="rotate(10,65,130)" />
+    <rect x="95" y="132" width="20" height="8" rx="4" ry="4" fill="url(#meatPattern)" transform="rotate(-8,95,132)" />
+    <rect x="125" y="131" width="20" height="8" rx="4" ry="4" fill="url(#meatPattern)" transform="rotate(4,125,131)" />
+    
+    <!-- Row 3 (top row) -->
+    <rect x="75" y="120" width="20" height="8" rx="4" ry="4" fill="url(#meatPattern)" transform="rotate(-7,75,120)" />
+    <rect x="105" y="121" width="20" height="8" rx="4" ry="4" fill="url(#meatPattern)" transform="rotate(9,105,121)" />
+    
+    <!-- Seared Edges -->
+    <rect x="55" y="139" width="20" height="8" rx="4" ry="4" stroke="#3D1000" stroke-width="1" fill="none" transform="rotate(-5,55,139)" />
+    <rect x="85" y="140" width="20" height="8" rx="4" ry="4" stroke="#3D1000" stroke-width="1" fill="none" transform="rotate(5,85,140)" />
+    <rect x="115" y="138" width="20" height="8" rx="4" ry="4" stroke="#3D1000" stroke-width="1" fill="none" transform="rotate(-3,115,138)" />
+    
+    <rect x="65" y="130" width="20" height="8" rx="4" ry="4" stroke="#3D1000" stroke-width="1" fill="none" transform="rotate(10,65,130)" />
+    <rect x="95" y="132" width="20" height="8" rx="4" ry="4" stroke="#3D1000" stroke-width="1" fill="none" transform="rotate(-8,95,132)" />
+    <rect x="125" y="131" width="20" height="8" rx="4" ry="4" stroke="#3D1000" stroke-width="1" fill="none" transform="rotate(4,125,131)" />
+    
+    <rect x="75" y="120" width="20" height="8" rx="4" ry="4" stroke="#3D1000" stroke-width="1" fill="none" transform="rotate(-7,75,120)" />
+    <rect x="105" y="121" width="20" height="8" rx="4" ry="4" stroke="#3D1000" stroke-width="1" fill="none" transform="rotate(9,105,121)" />
+    
+    <!-- Grill Marks -->
+    <path d="M56,140 L64,138 M58,142 L66,140" stroke="#2A0A00" stroke-width="0.5" opacity="0.7" transform="rotate(-5,55,139)" />
+    <path d="M86,139 L94,141 M88,137 L96,139" stroke="#2A0A00" stroke-width="0.5" opacity="0.7" transform="rotate(5,85,140)" />
+    <path d="M116,139 L124,137 M118,141 L126,139" stroke="#2A0A00" stroke-width="0.5" opacity="0.7" transform="rotate(-3,115,138)" />
+    
+    <path d="M66,128 L74,130 M68,126 L76,128" stroke="#2A0A00" stroke-width="0.5" opacity="0.7" transform="rotate(10,65,130)" />
+    <path d="M96,133 L104,131 M98,135 L106,133" stroke="#2A0A00" stroke-width="0.5" opacity="0.7" transform="rotate(-8,95,132)" />
+    <path d="M126,130 L134,132 M128,128 L136,130" stroke="#2A0A00" stroke-width="0.5" opacity="0.7" transform="rotate(4,125,131)" />
+    
+    <path d="M76,121 L84,119 M78,123 L86,121" stroke="#2A0A00" stroke-width="0.5" opacity="0.7" transform="rotate(-7,75,120)" />
+    <path d="M106,120 L114,122 M108,118 L116,120" stroke="#2A0A00" stroke-width="0.5" opacity="0.7" transform="rotate(9,105,121)" />
+    
+    <!-- Gloss/Highlight spots -->
+    <ellipse cx="60" cy="137" rx="3" ry="1" fill="#A05A2C" opacity="0.4" transform="rotate(-5,55,139)" />
+    <ellipse cx="90" cy="138" rx="3" ry="1" fill="#A05A2C" opacity="0.4" transform="rotate(5,85,140)" />
+    <ellipse cx="120" cy="136" rx="3" ry="1" fill="#A05A2C" opacity="0.4" transform="rotate(-3,115,138)" />
+    
+    <ellipse cx="70" cy="128" rx="3" ry="1" fill="#A05A2C" opacity="0.4" transform="rotate(10,65,130)" />
+    <ellipse cx="100" cy="130" rx="3" ry="1" fill="#A05A2C" opacity="0.4" transform="rotate(-8,95,132)" />
+    <ellipse cx="130" cy="129" rx="3" ry="1" fill="#A05A2C" opacity="0.4" transform="rotate(4,125,131)" />
+    
+    <ellipse cx="80" cy="118" rx="3" ry="1" fill="#A05A2C" opacity="0.4" transform="rotate(-7,75,120)" />
+    <ellipse cx="110" cy="119" rx="3" ry="1" fill="#A05A2C" opacity="0.4" transform="rotate(9,105,121)" />
+    
+    <!-- Contact points with bread - meat juices -->
+    <ellipse cx="55" cy="143" rx="4" ry="1" fill="#8B4513" opacity="0.3" transform="rotate(-5,55,139)" />
+    <ellipse cx="85" cy="144" rx="4" ry="1" fill="#8B4513" opacity="0.3" transform="rotate(5,85,140)" />
+    <ellipse cx="115" cy="142" rx="4" ry="1" fill="#8B4513" opacity="0.3" transform="rotate(-3,115,138)" />
+    
+    <ellipse cx="65" cy="134" rx="4" ry="1" fill="#8B4513" opacity="0.3" transform="rotate(10,65,130)" />
+    <ellipse cx="95" cy="136" rx="4" ry="1" fill="#8B4513" opacity="0.3" transform="rotate(-8,95,132)" />
+    <ellipse cx="125" cy="135" rx="4" ry="1" fill="#8B4513" opacity="0.3" transform="rotate(4,125,131)" />
+    
+    <ellipse cx="75" cy="124" rx="4" ry="1" fill="#8B4513" opacity="0.3" transform="rotate(-7,75,120)" />
+    <ellipse cx="105" cy="125" rx="4" ry="1" fill="#8B4513" opacity="0.3" transform="rotate(9,105,121)" />
+  </g>
+  
+  <!-- Chopped Onions - Repositioned to sit on top of the cevapi -->
+  <g filter="url(#dropShadow)">
+    <!-- Onion shadows to ground them on the cevapi -->
+    <ellipse cx="75" cy="118" rx="10" ry="2" fill="#D50000" opacity="0.15" />
+    <ellipse cx="100" cy="115" rx="10" ry="2" fill="#D50000" opacity="0.15" />
+    <ellipse cx="120" cy="117" rx="10" ry="2" fill="#D50000" opacity="0.15" />
+    
+    <!-- Repositioned onion slices -->
+    <path d="M65,115 C70,113 75,117 80,115 C85,113 90,117 95,115" stroke="url(#onionGradient)" stroke-width="2" fill="none" />
+    <path d="M95,112 C100,110 105,114 110,112 C115,110 120,114 125,112" stroke="url(#onionGradient)" stroke-width="2" fill="none" />
+    
+    <path d="M70,110 C75,108 80,112 85,110 C90,108 95,112 100,110" stroke="url(#onionGradient)" stroke-width="2" fill="none" />
+    <path d="M90,107 C95,105 100,109 105,107 C110,105 115,109 120,107" stroke="url(#onionGradient)" stroke-width="2" fill="none" />
+    
+    <!-- Onion Pieces -->
+    <ellipse cx="75" cy="107" rx="3" ry="1" fill="url(#onionGradient)" transform="rotate(-15,75,107)" />
+    <ellipse cx="85" cy="105" rx="3" ry="1" fill="url(#onionGradient)" transform="rotate(10,85,105)" />
+    <ellipse cx="95" cy="107" rx="3" ry="1" fill="url(#onionGradient)" transform="rotate(-5,95,107)" />
+    <ellipse cx="105" cy="104" rx="3" ry="1" fill="url(#onionGradient)" transform="rotate(5,105,104)" />
+    <ellipse cx="115" cy="106" rx="3" ry="1" fill="url(#onionGradient)" transform="rotate(-10,115,106)" />
+    
+    <!-- Inner details for onion pieces -->
+    <ellipse cx="75" cy="107" rx="2" ry="0.7" fill="#FF9E9E" opacity="0.5" transform="rotate(-15,75,107)" />
+    <ellipse cx="85" cy="105" rx="2" ry="0.7" fill="#FF9E9E" opacity="0.5" transform="rotate(10,85,105)" />
+    <ellipse cx="95" cy="107" rx="2" ry="0.7" fill="#FF9E9E" opacity="0.5" transform="rotate(-5,95,107)" />
+    <ellipse cx="105" cy="104" rx="2" ry="0.7" fill="#FF9E9E" opacity="0.5" transform="rotate(5,105,104)" />
+    <ellipse cx="115" cy="106" rx="2" ry="0.7" fill="#FF9E9E" opacity="0.5" transform="rotate(-10,115,106)" />
+    
+    <!-- Contact shadows with cevapi -->
+    <path d="M74,108 L76,108" stroke="#D50000" stroke-width="0.5" opacity="0.3" transform="rotate(-15,75,107)" />
+    <path d="M84,106 L86,106" stroke="#D50000" stroke-width="0.5" opacity="0.3" transform="rotate(10,85,105)" />
+    <path d="M94,108 L96,108" stroke="#D50000" stroke-width="0.5" opacity="0.3" transform="rotate(-5,95,107)" />
+    <path d="M104,105 L106,105" stroke="#D50000" stroke-width="0.5" opacity="0.3" transform="rotate(5,105,104)" />
+    <path d="M114,107 L116,107" stroke="#D50000" stroke-width="0.5" opacity="0.3" transform="rotate(-10,115,106)" />
+  </g>
+  
+  <!-- Kajmak (Clotted Cream) - Repositioned to sit on top of the cevapi and onions -->
+  <g filter="url(#dropShadow)">
+    <!-- Kajmak shadow to ground it -->
+    <ellipse cx="100" cy="103" rx="30" ry="3" fill="#FFF59D" opacity="0.2" />
+    
+    <!-- Repositioned kajmak -->
+    <path d="M70,100 C75,97 85,103 95,100 C105,97 115,103 130,100" fill="url(#kajmakGradient)" />
+    
+    <!-- Kajmak Texture -->
+    <ellipse cx="80" cy="98" rx="5" ry="2" fill="#FFFFFF" opacity="0.6" />
+    <ellipse cx="100" cy="97" rx="7" ry="2" fill="#FFFFFF" opacity="0.6" />
+    <ellipse cx="120" cy="98" rx="5" ry="2" fill="#FFFFFF" opacity="0.6" />
+    
+    <!-- Kajmak Folds and Texture -->
+    <path d="M75,99 Q80,96 85,99" stroke="#FFF9C4" stroke-width="0.8" fill="none" opacity="0.8" />
+    <path d="M95,98 Q100,95 105,98" stroke="#FFF9C4" stroke-width="0.8" fill="none" opacity="0.8" />
+    <path d="M115,99 Q120,96 125,99" stroke="#FFF9C4" stroke-width="0.8" fill="none" opacity="0.8" />
+    
+    <!-- Kajmak Drips - interacting with elements below -->
+    <path d="M85,100 Q84,103 83,105" stroke="url(#kajmakGradient)" stroke-width="1.5" fill="none" />
+    <path d="M110,100 Q111,104 112,106" stroke="url(#kajmakGradient)" stroke-width="1.5" fill="none" />
+    
+    <!-- Contact points with elements below -->
+    <ellipse cx="85" cy="101" rx="3" ry="0.8" fill="#FFF59D" opacity="0.4" />
+    <ellipse cx="110" cy="101" rx="3" ry="0.8" fill="#FFF59D" opacity="0.4" />
+  </g>
+  
+  <!-- Chopped Parsley - Repositioned to sit on top of kajmak and cevapi -->
+  <g filter="url(#dropShadow)">
+    <!-- Parsley shadow -->
+    <ellipse cx="100" cy="95" rx="35" ry="2" fill="#2E7D32" opacity="0.1" />
+    
+    <!-- Repositioned parsley -->
+    <path d="M65,92 C68,90 70,93 72,91" stroke="url(#parsleyGradient)" stroke-width="1" fill="none" />
+    <path d="M80,90 C83,88 85,91 87,89" stroke="url(#parsleyGradient)" stroke-width="1" fill="none" />
+    <path d="M95,92 C98,90 100,93 102,91" stroke="url(#parsleyGradient)" stroke-width="1" fill="none" />
+    <path d="M110,90 C113,88 115,91 117,89" stroke="url(#parsleyGradient)" stroke-width="1" fill="none" />
+    <path d="M125,92 C128,90 130,93 132,91" stroke="url(#parsleyGradient)" stroke-width="1" fill="none" />
+    
+    <!-- Parsley Leaves -->
+    <ellipse cx="73" cy="91" rx="2" ry="1" fill="url(#parsleyGradient)" transform="rotate(-15,73,91)" />
+    <ellipse cx="88" cy="89" rx="2" ry="1" fill="url(#parsleyGradient)" transform="rotate(10,88,89)" />
+    <ellipse cx="103" cy="91" rx="2" ry="1" fill="url(#parsleyGradient)" transform="rotate(-5,103,91)" />
+    <ellipse cx="118" cy="89" rx="2" ry="1" fill="url(#parsleyGradient)" transform="rotate(5,118,89)" />
+    <ellipse cx="133" cy="91" rx="2" ry="1" fill="url(#parsleyGradient)" transform="rotate(-10,133,91)" />
+    
+    <!-- Parsley Veins -->
+    <path d="M72,91 L74,91" stroke="#2E7D32" stroke-width="0.3" opacity="0.7" transform="rotate(-15,73,91)" />
+    <path d="M87,89 L89,89" stroke="#2E7D32" stroke-width="0.3" opacity="0.7" transform="rotate(10,88,89)" />
+    <path d="M102,91 L104,91" stroke="#2E7D32" stroke-width="0.3" opacity="0.7" transform="rotate(-5,103,91)" />
+    <path d="M117,89 L119,89" stroke="#2E7D32" stroke-width="0.3" opacity="0.7" transform="rotate(5,118,89)" />
+    <path d="M132,91 L134,91" stroke="#2E7D32" stroke-width="0.3" opacity="0.7" transform="rotate(-10,133,91)" />
+    
+    <!-- Shadow elements to make parsley sit on kajmak -->
+    <path d="M73,92 L73,93" stroke="#2E7D32" stroke-width="0.5" opacity="0.2" transform="rotate(-15,73,91)" />
+    <path d="M88,90 L88,91" stroke="#2E7D32" stroke-width="0.5" opacity="0.2" transform="rotate(10,88,89)" />
+    <path d="M103,92 L103,93" stroke="#2E7D32" stroke-width="0.5" opacity="0.2" transform="rotate(-5,103,91)" />
+    <path d="M118,90 L118,91" stroke="#2E7D32" stroke-width="0.5" opacity="0.2" transform="rotate(5,118,89)" />
+    <path d="M133,92 L133,93" stroke="#2E7D32" stroke-width="0.5" opacity="0.2" transform="rotate(-10,133,91)" />
+  </g>
+  
+  <!-- Salt and Pepper - Repositioned to sit on top of everything -->
+  <g>
+    <!-- Salt -->
+    <circle cx="75" cy="85" r="0.5" fill="url(#saltGradient)" />
+    <circle cx="85" cy="88" r="0.5" fill="url(#saltGradient)" />
+    <circle cx="95" cy="86" r="0.5" fill="url(#saltGradient)" />
+    <circle cx="105" cy="87" r="0.5" fill="url(#saltGradient)" />
+    <circle cx="115" cy="85" r="0.5" fill="url(#saltGradient)" />
+    <circle cx="125" cy="88" r="0.5" fill="url(#saltGradient)" />
+    
+    <!-- Pepper -->
+    <circle cx="78" cy="87" r="0.3" fill="url(#pepperGradient)" />
+    <circle cx="88" cy="85" r="0.3" fill="url(#pepperGradient)" />
+    <circle cx="98" cy="88" r="0.3" fill="url(#pepperGradient)" />
+    <circle cx="108" cy="86" r="0.3" fill="url(#pepperGradient)" />
+    <circle cx="118" cy="88" r="0.3" fill="url(#pepperGradient)" />
+    <circle cx="128" cy="85" r="0.3" fill="url(#pepperGradient)" />
+    
+    <!-- More salt -->
+    <circle cx="72" cy="84" r="0.4" fill="url(#saltGradient)" />
+    <circle cx="82" cy="86" r="0.4" fill="url(#saltGradient)" />
+    <circle cx="92" cy="84" r="0.4" fill="url(#saltGradient)" />
+    <circle cx="102" cy="86" r="0.4" fill="url(#saltGradient)" />
+    <circle cx="112" cy="84" r="0.4" fill="url(#saltGradient)" />
+    <circle cx="122" cy="86" r="0.4" fill="url(#saltGradient)" />
+  </g>
+  
+  <!-- Steam Effect - positioned properly above the dish -->
+  <g opacity="0.2">
+    <path d="M70,80 Q75,75 80,80 Q85,85 90,75" stroke="#FFFFFF" stroke-width="1" fill="none" />
+    <path d="M100,75 Q105,70 110,75 Q115,80 120,70" stroke="#FFFFFF" stroke-width="1" fill="none" />
+    <path d="M85,70 Q90,65 95,70 Q100,75 105,65" stroke="#FFFFFF" stroke-width="1" fill="none" />
+    
+    <!-- More Steam Details -->
+    <path d="M75,77 Q78,73 80,77" stroke="#FFFFFF" stroke-width="0.7" fill="none" />
+    <path d="M105,72 Q108,68 110,72" stroke="#FFFFFF" stroke-width="0.7" fill="none" />
+    <path d="M90,67 Q93,63 95,67" stroke="#FFFFFF" stroke-width="0.7" fill="none" />
+  </g>
+  
+  <!-- Highlights - repositioned to match new arrangement -->
+  <g>
+    <ellipse cx="85" cy="130" rx="8" ry="3" fill="#FFFFFF" opacity="0.1" />
+    <ellipse cx="115" cy="128" rx="9" ry="2" fill="#FFFFFF" opacity="0.1" />
+    <ellipse cx="100" cy="140" rx="40" ry="5" fill="#FFFFFF" opacity="0.1" />
+    
+    <!-- Enhanced Highlights -->
+    <ellipse cx="70" cy="120" rx="5" ry="2" fill="#FFFFFF" opacity="0.1" />
+    <ellipse cx="130" cy="122" rx="6" ry="2" fill="#FFFFFF" opacity="0.1" />
+    <ellipse cx="95" cy="95" rx="7" ry="2" fill="#FFFFFF" opacity="0.15" />
+  </g>
+</svg>

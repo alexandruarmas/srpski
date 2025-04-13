@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Wooden Table -->
+    <linearGradient id="woodGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8B5A2B" />
+      <stop offset="20%" stop-color="#A67C52" />
+      <stop offset="40%" stop-color="#8B5A2B" />
+      <stop offset="60%" stop-color="#A67C52" />
+      <stop offset="80%" stop-color="#8B5A2B" />
+      <stop offset="100%" stop-color="#A67C52" />
+    </linearGradient>
+    
+    <!-- Plate Gradient -->
+    <linearGradient id="plateGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#E0E0E0" />
+    </linearGradient>
+    
+    <!-- Bottom Bun Gradient -->
+    <linearGradient id="bottomBunGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F5D0A0" />
+      <stop offset="100%" stop-color="#E0B070" />
+    </linearGradient>
+    
+    <!-- Bottom Bun Edge Gradient -->
+    <linearGradient id="bottomBunEdgeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E0B070" />
+      <stop offset="100%" stop-color="#C69050" />
+    </linearGradient>
+    
+    <!-- Patty Gradient -->
+    <linearGradient id="pattyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#803010" />
+      <stop offset="100%" stop-color="#602000" />
+    </linearGradient>
+    
+    <!-- Cheese Gradient -->
+    <linearGradient id="cheeseGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFD700" />
+      <stop offset="100%" stop-color="#FFA500" />
+    </linearGradient>
+    
+    <!-- Top Bun Gradient -->
+    <linearGradient id="topBunGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F5D0A0" />
+      <stop offset="100%" stop-color="#E0B070" />
+    </linearGradient>
+    
+    <!-- Sesame Seed Gradient -->
+    <linearGradient id="sesameGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF8E1" />
+      <stop offset="100%" stop-color="#FFE0B2" />
+    </linearGradient>
+    
+    <!-- Ketchup Gradient -->
+    <linearGradient id="ketchupGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E74C3C" />
+      <stop offset="100%" stop-color="#C0392B" />
+    </linearGradient>
+    
+    <!-- Drop Shadow -->
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2" />
+      <feOffset dx="0" dy="2" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    
+    <!-- Inner Shadow -->
+    <filter id="innerShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="1" result="blur" />
+      <feOffset dx="0" dy="1" />
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.3 0" />
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    
+    <!-- Meat Texture -->
+    <pattern id="meatPattern" width="10" height="10" patternUnits="userSpaceOnUse">
+      <rect width="10" height="10" fill="url(#pattyGradient)" />
+      <circle cx="2" cy="2" r="1" fill="#500000" opacity="0.5" />
+      <circle cx="7" cy="8" r="1.5" fill="#500000" opacity="0.3" />
+    </pattern>
+  </defs>
+  
+  <!-- Wooden Table Background -->
+  <rect x="0" y="175" width="200" height="25" fill="url(#woodGradient)" />
+  
+  <!-- Plate with Shadow -->
+  <ellipse cx="100" cy="165" rx="85" ry="20" fill="url(#plateGradient)" filter="url(#dropShadow)" />
+  
+  <!-- Bottom Bun -->
+  <g filter="url(#dropShadow)">
+    <ellipse cx="100" cy="150" rx="70" ry="15" fill="url(#bottomBunGradient)" />
+    <path d="M40,145 C50,150 75,155 100,155 C125,155 150,150 160,145 C150,140 125,135 100,135 C75,135 50,140 40,145 Z" fill="url(#bottomBunEdgeGradient)" />
+  </g>
+  
+  <!-- Lettuce -->
+  <g filter="url(#dropShadow)">
+    <path d="M45,138 C55,143 65,136 75,142 C85,148 95,140 105,143 C115,146 125,138 135,142 C145,146 155,138 165,142" fill="none" stroke="#69AF5C" stroke-width="8" stroke-linecap="round" />
+    <path d="M50,136 C60,140 70,133 80,139 C90,145 100,137 110,140 C120,143 130,135 140,139 C150,143 160,135 170,139" fill="none" stroke="#7CB342" stroke-width="6" stroke-linecap="round" opacity="0.8" />
+  </g>
+  
+  <!-- Bottom Meat Patty -->
+  <g filter="url(#dropShadow)">
+    <ellipse cx="100" cy="125" rx="65" ry="12" fill="url(#pattyGradient)" />
+    <ellipse cx="100" cy="125" rx="65" ry="12" fill="url(#meatPattern)" opacity="0.8" />
+    
+    <!-- Patty Texture Details -->
+    <ellipse cx="75" cy="123" rx="12" ry="4" fill="#6B3611" opacity="0.3" />
+    <ellipse cx="125" cy="127" rx="15" ry="3" fill="#6B3611" opacity="0.3" />
+  </g>
+  
+  <!-- Cheese Filling -->
+  <g filter="url(#dropShadow)">
+    <ellipse cx="100" cy="110" rx="60" ry="8" fill="url(#cheeseGradient)" />
+    <ellipse cx="100" cy="110" rx="55" ry="6" fill="#FFEC8B" opacity="0.7" />
+    
+    <!-- Cheese Texture -->
+    <path d="M60,110 C70,112 85,110 100,112 C115,114 130,112 140,110" stroke="#FFA500" stroke-width="0.5" fill="none" opacity="0.5" />
+    <path d="M65,107 C75,109 90,107 105,109 C120,111 135,109 145,107" stroke="#FFA500" stroke-width="0.5" fill="none" opacity="0.5" />
+  </g>
+  
+  <!-- Top Meat Patty -->
+  <g filter="url(#dropShadow)">
+    <ellipse cx="100" cy="95" rx="65" ry="12" fill="url(#pattyGradient)" />
+    <ellipse cx="100" cy="95" rx="65" ry="12" fill="url(#meatPattern)" opacity="0.8" />
+    
+    <!-- Patty Texture Details -->
+    <ellipse cx="85" cy="93" rx="12" ry="4" fill="#6B3611" opacity="0.3" />
+    <ellipse cx="115" cy="97" rx="15" ry="3" fill="#6B3611" opacity="0.3" />
+  </g>
+  
+  <!-- Onion -->
+  <g filter="url(#dropShadow)">
+    <ellipse cx="80" cy="85" rx="15" ry="3" fill="#F5F5DC" transform="rotate(-5,80,85)" />
+    <ellipse cx="120" cy="85" rx="15" ry="3" fill="#F5F5DC" transform="rotate(5,120,85)" />
+    
+    <!-- Onion Details -->
+    <path d="M70,85 C75,86 85,84 90,85" stroke="#F0F0F0" stroke-width="0.5" fill="none" opacity="0.7" transform="rotate(-5,80,85)" />
+    <path d="M110,85 C115,86 125,84 130,85" stroke="#F0F0F0" stroke-width="0.5" fill="none" opacity="0.7" transform="rotate(5,120,85)" />
+  </g>
+  
+  <!-- Ketchup -->
+  <path d="M70,80 C80,77 90,80 100,83 C110,86 120,83 130,80" stroke="url(#ketchupGradient)" stroke-width="4" fill="none" stroke-linecap="round" />
+  
+  <!-- Top Bun -->
+  <g filter="url(#dropShadow)">
+    <path d="M45,65 C45,50 70,35 100,35 C130,35 155,50 155,65 C155,80 130,95 100,95 C70,95 45,80 45,65" fill="url(#topBunGradient)" />
+    
+    <!-- Top Bun Shine -->
+    <ellipse cx="90" cy="50" rx="30" ry="10" fill="#FFFFFF" opacity="0.2" />
+    
+    <!-- Sesame Seeds -->
+    <ellipse cx="70" cy="50" rx="3" ry="2" fill="url(#sesameGradient)" transform="rotate(-15,70,50)" />
+    <ellipse cx="90" cy="45" rx="3" ry="2" fill="url(#sesameGradient)" transform="rotate(10,90,45)" />
+    <ellipse cx="110" cy="45" rx="3" ry="2" fill="url(#sesameGradient)" transform="rotate(-10,110,45)" />
+    <ellipse cx="130" cy="50" rx="3" ry="2" fill="url(#sesameGradient)" transform="rotate(15,130,50)" />
+    <ellipse cx="80" cy="55" rx="3" ry="2" fill="url(#sesameGradient)" transform="rotate(5,80,55)" />
+    <ellipse cx="120" cy="55" rx="3" ry="2" fill="url(#sesameGradient)" transform="rotate(-5,120,55)" />
+    <ellipse cx="100" cy="40" rx="3" ry="2" fill="url(#sesameGradient)" />
+  </g>
+  
+  <!-- Highlights -->
+  <ellipse cx="85" cy="125" rx="10" ry="4" fill="#FFFFFF" opacity="0.1" />
+  <ellipse cx="115" cy="95" rx="12" ry="3" fill="#FFFFFF" opacity="0.1" />
+  
+  <!-- Steam Effect -->
+  <g opacity="0.2">
+    <path d="M70,35 Q75,30 80,35 Q85,40 90,30" stroke="#FFFFFF" stroke-width="1" fill="none" />
+    <path d="M100,30 Q105,25 110,30 Q115,35 120,25" stroke="#FFFFFF" stroke-width="1" fill="none" />
+    <path d="M85,25 Q90,20 95,25 Q100,30 105,20" stroke="#FFFFFF" stroke-width="1" fill="none" />
+  </g>
+</svg>

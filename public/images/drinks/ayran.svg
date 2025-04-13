@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Wooden Table Gradient -->
+    <linearGradient id="woodGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8B5A2B" />
+      <stop offset="20%" stop-color="#A67C52" />
+      <stop offset="40%" stop-color="#8B5A2B" />
+      <stop offset="60%" stop-color="#A67C52" />
+      <stop offset="80%" stop-color="#8B5A2B" />
+      <stop offset="100%" stop-color="#A67C52" />
+    </linearGradient>
+    
+    <!-- Glass Gradient -->
+    <linearGradient id="glassGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#F5F5F5" stop-opacity="0.85" />
+    </linearGradient>
+    
+    <!-- Glass Rim Highlight -->
+    <linearGradient id="rimHighlight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#F5F5F5" stop-opacity="0.9" />
+    </linearGradient>
+    
+    <!-- Ayran Gradient - Creamy White -->
+    <linearGradient id="ayranGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAFAFA" />
+      <stop offset="100%" stop-color="#F5F5F5" />
+    </linearGradient>
+    
+    <!-- Ayran Foam Gradient -->
+    <linearGradient id="foamGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#F8F8F8" stop-opacity="0.9" />
+    </linearGradient>
+    
+    <!-- Foam Bubble Gradient -->
+    <radialGradient id="bubbleGradient" cx="30%" cy="30%" r="70%" fx="20%" fy="20%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#F5F5F5" stop-opacity="0.7" />
+    </radialGradient>
+    
+    <!-- Mint Leaf Gradient -->
+    <linearGradient id="mintLeafGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4CAF50" />
+      <stop offset="100%" stop-color="#388E3C" />
+    </linearGradient>
+    
+    <!-- Mint Stem Gradient -->
+    <linearGradient id="mintStemGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#81C784" />
+      <stop offset="100%" stop-color="#4CAF50" />
+    </linearGradient>
+    
+    <!-- Mint Highlight Gradient -->
+    <linearGradient id="mintHighlightGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A5D6A7" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#81C784" stop-opacity="0.4" />
+    </linearGradient>
+    
+    <!-- Straw Gradient -->
+    <linearGradient id="strawGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFECB3" />
+      <stop offset="100%" stop-color="#FFE082" />
+    </linearGradient>
+    
+    <!-- Straw Stripe Gradient -->
+    <linearGradient id="strawStripeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF9C4" />
+      <stop offset="100%" stop-color="#FFF59D" />
+    </linearGradient>
+    
+    <!-- Salt Gradient -->
+    <linearGradient id="saltGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F5F5F5" />
+    </linearGradient>
+    
+    <!-- Light Reflection Gradient -->
+    <linearGradient id="reflectionGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+    </linearGradient>
+    
+    <!-- Condensation Gradient -->
+    <linearGradient id="condensationGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#E0F7FA" stop-opacity="0.6" />
+    </linearGradient>
+    
+    <!-- Jug Gradient -->
+    <linearGradient id="jugGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B3E5FC" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#81D4FA" stop-opacity="0.4" />
+    </linearGradient>
+    
+    <!-- Jug Handle Gradient -->
+    <linearGradient id="jugHandleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B3E5FC" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#81D4FA" stop-opacity="0.5" />
+    </linearGradient>
+    
+    <!-- Drop Shadow Filter -->
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2" />
+      <feOffset dx="0" dy="2" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    
+    <!-- Soft Shadow Filter -->
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="1" />
+      <feOffset dx="0" dy="1" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.2" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    
+    <!-- Glass Blur Filter -->
+    <filter id="glassBlur" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="0.5" />
+    </filter>
+    
+    <!-- Condensation Filter -->
+    <filter id="condensation" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.1" numOctaves="1" seed="1" />
+      <feDisplacementMap in="SourceGraphic" scale="2" />
+    </filter>
+    
+    <!-- Glass Pattern -->
+    <pattern id="glassPattern" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect width="20" height="20" fill="white" fill-opacity="0.05" />
+      <path d="M0,10 L20,10 M10,0 L10,20" stroke="white" stroke-width="0.5" stroke-opacity="0.1" />
+    </pattern>
+    
+    <!-- Salt Pattern -->
+    <pattern id="saltPattern" width="10" height="10" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.5" fill="#FFFFFF" />
+      <circle cx="7" cy="7" r="0.6" fill="#FFFFFF" />
+      <circle cx="5" cy="3" r="0.4" fill="#FFFFFF" />
+      <circle cx="8" cy="1" r="0.3" fill="#FFFFFF" />
+      <circle cx="1" cy="8" r="0.4" fill="#FFFFFF" />
+    </pattern>
+  </defs>
+  
+  <!-- Wooden Table -->
+  <rect x="0" y="175" width="200" height="25" fill="url(#woodGradient)" />
+  <path d="M0,180 L200,183 M0,190 L200,187 M0,195 L200,193" stroke="#5D4037" stroke-width="0.3" fill="none" opacity="0.3" />
+  
+  <!-- Main Glass of Ayran -->
+  <g filter="url(#dropShadow)" transform="translate(100, 155)">
+    <!-- Glass Shadow on Table -->
+    <ellipse cx="0" cy="20" rx="18" ry="4" fill="rgba(0,0,0,0.2)" filter="url(#softShadow)" />
+    
+    <!-- Glass Body -->
+    <path d="M-18,18 
+             C-18,20 -10,22 0,22 
+             C10,22 18,20 18,18 
+             L15,-45 
+             C15,-47 8,-48 0,-48 
+             C-8,-48 -15,-47 -15,-45 
+             Z" 
+          fill="url(#glassGradient)" 
+          filter="url(#glassBlur)" />
+    
+    <!-- Glass Rim -->
+    <ellipse cx="0" cy="-48" rx="15" ry="3" fill="url(#rimHighlight)" />
+    
+    <!-- Glass Bottom Inner -->
+    <ellipse cx="0" cy="18" rx="17" ry="3" fill="#F5F5F5" opacity="0.3" />
+    
+    <!-- Ayran Liquid -->
+    <path d="M-17,17 
+             C-17,19 -9.5,21 0,21 
+             C9.5,21 17,19 17,17 
+             L14.5,-20 
+             C14.5,-22 7.5,-23 0,-23 
+             C-7.5,-23 -14.5,-22 -14.5,-20 
+             Z" 
+          fill="url(#ayranGradient)" />
+    
+    <!-- Ayran Foam Layer -->
+    <path d="M-14.5,-20 
+             C-14.5,-22 -7.5,-23 0,-23 
+             C7.5,-23 14.5,-22 14.5,-20 
+             L14,-15 
+             C14,-17 7,-18 0,-18 
+             C-7,-18 -14,-17 -14,-15 
+             Z" 
+          fill="url(#foamGradient)" 
+          opacity="0.9" />
+    
+    <!-- Foam Surface -->
+    <ellipse cx="0" cy="-18" rx="14" ry="3" fill="url(#foamGradient)" />
+    
+    <!-- Foam Bubbles -->
+    <g opacity="0.8">
+      <circle cx="-10" cy="-19" r="1.8" fill="url(#bubbleGradient)" />
+      <circle cx="-5" cy="-20" r="2.2" fill="url(#bubbleGradient)" />
+      <circle cx="3" cy="-19" r="1.5" fill="url(#bubbleGradient)" />
+      <circle cx="8" cy="-18" r="2" fill="url(#bubbleGradient)" />
+      <circle cx="-7" cy="-17" r="1.3" fill="url(#bubbleGradient)" />
+      <circle cx="0" cy="-16" r="1.7" fill="url(#bubbleGradient)" />
+      <circle cx="6" cy="-17" r="1.4" fill="url(#bubbleGradient)" />
+    </g>
+    
+    <!-- Salt Sprinkle on Top -->
+    <g opacity="0.9">
+      <circle cx="-9" cy="-21" r="0.5" fill="url(#saltGradient)" />
+      <circle cx="-3" cy="-22" r="0.4" fill="url(#saltGradient)" />
+      <circle cx="2" cy="-22" r="0.5" fill="url(#saltGradient)" />
+      <circle cx="7" cy="-21" r="0.3" fill="url(#saltGradient)" />
+      <circle cx="-6" cy="-20" r="0.4" fill="url(#saltGradient)" />
+      <circle cx="4" cy="-20" r="0.5" fill="url(#saltGradient)" />
+      <circle cx="0" cy="-19" r="0.3" fill="url(#saltGradient)" />
+    </g>
+    
+    <!-- Mint Garnish -->
+    <g transform="translate(-5, -25) rotate(-15)">
+      <!-- Mint Leaf 1 -->
+      <path d="M0,0 
+               C-2,-5 -1,-10 3,-12 
+               C7,-13 10,-10 8,-5 
+               C6,0 2,3 0,0 Z" 
+            fill="url(#mintLeafGradient)" />
+      
+      <!-- Leaf Veins -->
+      <path d="M0,0 C2,-4 4,-8 3,-12 M0,0 C5,-2 8,-5 8,-5" 
+            fill="none" 
+            stroke="#388E3C" 
+            stroke-width="0.5" 
+            opacity="0.6" />
+      
+      <!-- Leaf Highlight -->
+      <path d="M0,-3 C2,-5 4,-6 5,-5" 
+            fill="none" 
+            stroke="url(#mintHighlightGradient)" 
+            stroke-width="1.5" 
+            opacity="0.5" />
+      
+      <!-- Mint Stem -->
+      <path d="M0,0 L1,5" 
+            stroke="url(#mintStemGradient)" 
+            stroke-width="1" 
+            fill="none" />
+    </g>
+    
+    <g transform="translate(4, -24) rotate(20)">
+      <!-- Mint Leaf 2 -->
+      <path d="M0,0 
+               C-2,-5 -1,-10 3,-12 
+               C7,-13 10,-10 8,-5 
+               C6,0 2,3 0,0 Z" 
+            fill="url(#mintLeafGradient)" />
+      
+      <!-- Leaf Veins -->
+      <path d="M0,0 C2,-4 4,-8 3,-12 M0,0 C5,-2 8,-5 8,-5" 
+            fill="none" 
+            stroke="#388E3C" 
+            stroke-width="0.5" 
+            opacity="0.6" />
+      
+      <!-- Leaf Highlight -->
+      <path d="M0,-3 C2,-5 4,-6 5,-5" 
+            fill="none" 
+            stroke="url(#mintHighlightGradient)" 
+            stroke-width="1.5" 
+            opacity="0.5" />
+      
+      <!-- Mint Stem -->
+      <path d="M0,0 L1,5" 
+            stroke="url(#mintStemGradient)" 
+            stroke-width="1" 
+            fill="none" />
+    </g>
+    
+    <!-- Straw -->
+    <g transform="translate(10, -55) rotate(15)">
+      <path d="M0,0 L0,65" stroke="url(#strawGradient)" stroke-width="2.5" stroke-linecap="round" />
+      
+      <!-- Straw Stripes -->
+      <path d="M0,8 L0,10 M0,18 L0,20 M0,28 L0,30 M0,38 L0,40 M0,48 L0,50 M0,58 L0,60" 
+            stroke="url(#strawStripeGradient)" 
+            stroke-width="3" 
+            stroke-linecap="round" />
+      
+      <!-- Straw Bend -->
+      <path d="M0,0 C-3,-5 -8,-5 -10,0" 
+            stroke="url(#strawGradient)" 
+            stroke-width="2.5" 
+            fill="none" 
+            stroke-linecap="round" />
+      
+      <!-- Straw End -->
+      <path d="M-10,0 L-15,0" 
+            stroke="url(#strawGradient)" 
+            stroke-width="2.5" 
+            stroke-linecap="round" />
+    </g>
+    
+    <!-- Glass Reflections -->
+    <path d="M-15,0 
+             C-5,3 5,3 15,0" 
+          fill="none" 
+          stroke="url(#reflectionGradient)" 
+          stroke-width="6" 
+          stroke-opacity="0.15" />
+    
+    <path d="M-14,-25 
+             C-7,-28 7,-28 14,-25" 
+          fill="none" 
+          stroke="url(#reflectionGradient)" 
+          stroke-width="3" 
+          stroke-opacity="0.1" />
+    
+    <!-- Glass Pattern Overlay -->
+    <path d="M-18,18 
+             C-18,20 -10,22 0,22 
+             C10,22 18,20 18,18 
+             L15,-45 
+             C15,-47 8,-48 0,-48 
+             C-8,-48 -15,-47 -15,-45 
+             Z" 
+          fill="url(#glassPattern)" />
+    
+    <!-- Condensation on Glass -->
+    <g opacity="0.7">
+      <circle cx="-16" cy="-15" r="0.9" fill="url(#condensationGradient)" />
+      <circle cx="-17" cy="-5" r="0.7" fill="url(#condensationGradient)" />
+      <circle cx="-16" cy="5" r="1.1" fill="url(#condensationGradient)" />
+      <circle cx="-17" cy="15" r="0.8" fill="url(#condensationGradient)" />
+      <circle cx="16" cy="-20" r="0.8" fill="url(#condensationGradient)" />
+      <circle cx="17" cy="-10" r="1" fill="url(#condensationGradient)" />
+      <circle cx="16" cy="0" r="0.7" fill="url(#condensationGradient)" />
+      <circle cx="17" cy="10" r="0.9" fill="url(#condensationGradient)" />
+    </g>
+  </g>
+  
+  <!-- Ayran Jug -->
+  <g filter="url(#dropShadow)" transform="translate(45, 150)">
+    <!-- Jug Shadow on Table -->
+    <ellipse cx="0" cy="25" rx="12" ry="4" fill="rgba(0,0,0,0.2)" filter="url(#softShadow)" />
+    
+    <!-- Jug Base -->
+    <path d="M-12,25 
+             C-12,28 -7,30 0,30 
+             C7,30 12,28 12,25 
+             L10,5 
+             L-10,5 
+             Z" 
+          fill="url(#jugGradient)" 
+          filter="url(#glassBlur)" />
+    
+    <!-- Jug Body -->
+    <path d="M-10,5 
+             L-12,-20 
+             C-12,-25 -6,-30 0,-30 
+             C6,-30 12,-25 12,-20 
+             L10,5 
+             Z" 
+          fill="url(#jugGradient)" 
+          filter="url(#glassBlur)" />
+    
+    <!-- Jug Handle -->
+    <path d="M10,-10 
+             C15,-15 20,-5 15,0 
+             C10,5 12,10 10,5" 
+          stroke="url(#jugHandleGradient)" 
+          stroke-width="3" 
+          fill="none" 
+          stroke-linecap="round" />
+    
+    <!-- Jug Spout -->
+    <path d="M-10,-15 
+             C-15,-17 -20,-12 -18,-8 
+             C-16,-4 -12,-5 -10,-5" 
+          stroke="url(#jugHandleGradient)" 
+          stroke-width="3" 
+          fill="none" 
+          stroke-linecap="round" />
+    
+    <!-- Jug Lid -->
+    <ellipse cx="0" cy="-30" rx="6" ry="2" fill="#B3E5FC" opacity="0.7" />
+    <ellipse cx="0" cy="-30" rx="2" ry="1" fill="#81D4FA" opacity="0.8" />
+    
+    <!-- Ayran Visible in Jug (through glass) -->
+    <path d="M-9,3 
+             L-11,-18 
+             C-11,-23 -5.5,-28 0,-28 
+             C5.5,-28 11,-23 11,-18 
+             L9,3 
+             Z" 
+          fill="url(#ayranGradient)" 
+          opacity="0.7" />
+    
+    <!-- Foam at the Top -->
+    <path d="M-11,-18 
+             C-11,-23 -5.5,-28 0,-28 
+             C5.5,-28 11,-23 11,-18 
+             L10.8,-15 
+             C10.8,-20 5.5,-25 0,-25 
+             C-5.5,-25 -10.8,-20 -10.8,-15 
+             Z" 
+          fill="url(#foamGradient)" 
+          opacity="0.6" />
+    
+    <!-- Jug Reflections -->
+    <path d="M-10,-10 
+             C-5,-12 5,-12 10,-10" 
+          fill="none" 
+          stroke="url(#reflectionGradient)" 
+          stroke-width="3" 
+          stroke-opacity="0.15" />
+    
+    <path d="M-8,15 
+             C-4,17 4,17 8,15" 
+          fill="none" 
+          stroke="url(#reflectionGradient)" 
+          stroke-width="3" 
+          stroke-opacity="0.15" />
+    
+    <!-- Glass Pattern Overlay -->
+    <path d="M-12,25 
+             C-12,28 -7,30 0,30 
+             C7,30 12,28 12,25 
+             L10,5 
+             L-10,5 
+             Z" 
+          fill="url(#glassPattern)" />
+    
+    <path d="M-10,5 
+             L-12,-20 
+             C-12,-25 -6,-30 0,-30 
+             C6,-30 12,-25 12,-20 
+             L10,5 
+             Z" 
+          fill="url(#glassPattern)" />
+    
+    <!-- Condensation on Jug -->
+    <g opacity="0.6">
+      <circle cx="-11" cy="-10" r="0.7" fill="url(#condensationGradient)" />
+      <circle cx="-10" cy="0" r="0.8" fill="url(#condensationGradient)" />
+      <circle cx="-11" cy="10" r="0.9" fill="url(#condensationGradient)" />
+      <circle cx="-10" cy="20" r="0.7" fill="url(#condensationGradient)" />
+      <circle cx="10" cy="-15" r="0.8" fill="url(#condensationGradient)" />
+      <circle cx="9" cy="-5" r="0.7" fill="url(#condensationGradient)" />
+      <circle cx="10" cy="5" r="0.9" fill="url(#condensationGradient)" />
+      <circle cx="9" cy="15" r="0.8" fill="url(#condensationGradient)" />
+    </g>
+  </g>
+  
+  <!-- Salt Shaker -->
+  <g filter="url(#dropShadow)" transform="translate(155, 145)">
+    <!-- Salt Shaker Shadow -->
+    <ellipse cx="0" cy="30" rx="5" ry="2" fill="rgba(0,0,0,0.2)" filter="url(#softShadow)" />
+    
+    <!-- Salt Shaker Base -->
+    <path d="M-5,30 
+             C-5,32 -3,33 0,33 
+             C3,33 5,32 5,30 
+             L4,5 
+             L-4,5 
+             Z" 
+          fill="#E0E0E0" />
+    
+    <!-- Salt Shaker Body -->
+    <path d="M-4,5 
+             L-3,-15 
+             C-3,-17 -1.5,-18 0,-18 
+             C1.5,-18 3,-17 3,-15 
+             L4,5 
+             Z" 
+          fill="#F5F5F5" />
+    
+    <!-- Salt Shaker Cap -->
+    <path d="M-3,-15 
+             L-3,-20 
+             C-3,-22 -1.5,-23 0,-23 
+             C1.5,-23 3,-22 3,-20 
+             L3,-15 
+             Z" 
+          fill="#BDBDBD" />
+    
+    <!-- Salt Shaker Top -->
+    <ellipse cx="0" cy="-23" rx="3" ry="1" fill="#9E9E9E" />
+    
+    <!-- Salt Holes -->
+    <circle cx="-1" cy="-23" r="0.5" fill="#212121" />
+    <circle cx="0" cy="-23" r="0.5" fill="#212121" />
+    <circle cx="1" cy="-23" r="0.5" fill="#212121" />
+    
+    <!-- Salt Particles -->
+    <g opacity="0.9" transform="translate(0, -25)">
+      <circle cx="-1.5" cy="-1" r="0.3" fill="url(#saltGradient)" />
+      <circle cx="-0.5" cy="-2" r="0.4" fill="url(#saltGradient)" />
+      <circle cx="0.5" cy="-1" r="0.3" fill="url(#saltGradient)" />
+      <circle cx="1.5" cy="-2" r="0.4" fill="url(#saltGradient)" />
+      <circle cx="-1" cy="-3" r="0.3" fill="url(#saltGradient)" />
+      <circle cx="0" cy="-4" r="0.4" fill="url(#saltGradient)" />
+      <circle cx="1" cy="-3" r="0.3" fill="url(#saltGradient)" />
+    </g>
+    
+    <!-- Salt in Shaker -->
+    <g transform="translate(0, -5)">
+      <path d="M-2.5,-5 
+               C-2.5,-3 -1.5,-2 0,-2 
+               C1.5,-2 2.5,-3 2.5,-5 
+               C2.5,-7 1.5,-8 0,-8 
+               C-1.5,-8 -2.5,-7 -2.5,-5 Z" 
+            fill="url(#saltPattern)" />
+    </g>
+    
+    <!-- Glass Reflections -->
+    <path d="M-3,-5 
+             C-1,-6 1,-6 3,-5" 
+          fill="none" 
+          stroke="url(#reflectionGradient)" 
+          stroke-width="2" 
+          stroke-opacity="0.1" />
+    
+    <path d="M-3,20 
+             C-1,21 1,21 3,20" 
+          fill="none" 
+          stroke="url(#reflectionGradient)" 
+          stroke-width="2" 
+          stroke-opacity="0.1" />
+  </g>
+</svg> 

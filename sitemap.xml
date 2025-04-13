@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<url>
+<loc>https://srpskiburger.ro</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://srpskiburger.ro/en" />
+<xhtml:link rel="alternate" hreflang="ro" href="https://srpskiburger.ro/ro" />
+<xhtml:link rel="alternate" hreflang="sr" href="https://srpskiburger.ro/sr" />
+<lastmod>2025-04-11T06:00:38.313Z</lastmod>
+</url>
+<url>
+<loc>https://srpskiburger.ro/menu</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://srpskiburger.ro/en/menu" />
+<xhtml:link rel="alternate" hreflang="ro" href="https://srpskiburger.ro/ro/menu" />
+<xhtml:link rel="alternate" hreflang="sr" href="https://srpskiburger.ro/sr/menu" />
+<lastmod>2025-04-11T06:00:38.313Z</lastmod>
+</url>
+<url>
+<loc>https://srpskiburger.ro/about</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://srpskiburger.ro/en/about" />
+<xhtml:link rel="alternate" hreflang="ro" href="https://srpskiburger.ro/ro/about" />
+<xhtml:link rel="alternate" hreflang="sr" href="https://srpskiburger.ro/sr/about" />
+<lastmod>2025-04-11T06:00:38.313Z</lastmod>
+</url>
+<url>
+<loc>https://srpskiburger.ro/contact</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://srpskiburger.ro/en/contact" />
+<xhtml:link rel="alternate" hreflang="ro" href="https://srpskiburger.ro/ro/contact" />
+<xhtml:link rel="alternate" hreflang="sr" href="https://srpskiburger.ro/sr/contact" />
+<lastmod>2025-04-11T06:00:38.313Z</lastmod>
+</url>
+<url>
+<loc>https://srpskiburger.ro/order</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://srpskiburger.ro/en/order" />
+<xhtml:link rel="alternate" hreflang="ro" href="https://srpskiburger.ro/ro/order" />
+<xhtml:link rel="alternate" hreflang="sr" href="https://srpskiburger.ro/sr/order" />
+<lastmod>2025-04-11T06:00:38.313Z</lastmod>
+</url>
+</urlset>

@@ -1,0 +1,32 @@
+:root {
+  --primary: 19 68% 18%; /* Brown #4b1d0f */
+  --primary-foreground: 36 65% 90%; /* Cream #f8e9d2 */
+  --secondary: 36 65% 90%; /* Cream #f8e9d2 */
+  --secondary-foreground: 19 68% 18%; /* Brown #4b1d0f */
+  --accent: 36 65% 90%; /* Cream #f8e9d2 */
+  --accent-foreground: 19 68% 18%; /* Brown #4b1d0f */
+  --ring: 19 68% 18%; /* Brown #4b1d0f */
+}
+
+/* Force override important elements */
+.bg-primary {
+  background-color: #4b1d0f !important;
+}
+
+.text-primary {
+  color: #4b1d0f !important;
+}
+
+.bg-secondary {
+  background-color: #f8e9d2 !important;
+}
+
+.text-secondary {
+  color: #f8e9d2 !important;
+}
+
+/* Override hover states */
+button:hover, a:hover {
+  background-color: #f8e9d2;
+  color: #4b1d0f;
+} 

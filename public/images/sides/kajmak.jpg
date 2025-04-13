@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <!-- Background -->
+  <rect width="300" height="300" fill="#f5f5f5"/>
+  
+  <!-- Small plate or dish -->
+  <ellipse cx="150" cy="180" rx="80" ry="30" fill="#e0e0e0"/>
+  
+  <!-- Kajmak (creamy dairy spread) -->
+  <ellipse cx="150" cy="175" rx="60" ry="20" fill="#fffde7"/>
+  <ellipse cx="150" cy="170" rx="55" ry="18" fill="#fffef0"/>
+  
+  <!-- Texture details -->
+  <path d="M 120,165 C 130,160 140,163 150,160 C 160,163 170,160 180,165" fill="none" stroke="#fffacd" stroke-width="3"/>
+  <path d="M 125,180 C 135,175 145,178 155,175 C 165,178 175,175 185,180" fill="none" stroke="#fffacd" stroke-width="2"/>
+  
+  <!-- Butter knife with some kajmak -->
+  <rect x="80" y="160" width="50" height="5" rx="2" ry="2" fill="#c0c0c0"/>
+  <path d="M 110,160 L 130,160 L 140,155 L 120,155 Z" fill="#fffacd"/>
+  
+  <!-- Small piece of bread -->
+  <path d="M 180,170 L 200,165 L 205,180 L 185,185 Z" fill="#f9e8c7"/>
+  
+  <!-- Text Label -->
+  <text x="150" y="250" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">
+    Kajmak
+  </text>
+</svg>

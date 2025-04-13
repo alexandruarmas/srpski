@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <!-- Background -->
+  <rect width="300" height="300" fill="#f5f5f5"/>
+  
+  <!-- Plate -->
+  <ellipse cx="150" cy="180" rx="120" ry="40" fill="#e0e0e0"/>
+  
+  <!-- Lepinja (Flatbread) -->
+  <ellipse cx="150" cy="165" rx="90" ry="25" fill="#f9e8c7"/>
+  
+  <!-- Pljeskavica (Meat patty) - split to show stuffing -->
+  <path d="M 75,155 A 75,15 0 0 0 150,155 V 148 A 75,15 0 0 0 75,148 Z" fill="#a64b2a"/>
+  <path d="M 150,155 A 75,15 0 0 0 225,155 V 148 A 75,15 0 0 0 150,148 Z" fill="#a64b2a"/>
+  
+  <!-- Kajmak (creamy dairy) filling -->
+  <ellipse cx="150" cy="150" rx="60" ry="10" fill="#fffacd"/>
+  <ellipse cx="150" cy="148" rx="55" ry="8" fill="#fffaee"/>
+  
+  <!-- Dripping kajmak details -->
+  <path d="M 130,145 C 135,140 145,142 150,140 C 155,142 165,140 170,145" fill="none" stroke="#fffacd" stroke-width="3"/>
+  <path d="M 140,143 C 145,138 150,140 155,138 C 160,140 165,138 170,143" fill="none" stroke="#fffaee" stroke-width="2"/>
+  
+  <!-- Text Label -->
+  <text x="150" y="250" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">
+    Punjena Pljeskavica
+  </text>
+</svg>

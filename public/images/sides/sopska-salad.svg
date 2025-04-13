@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Wooden Table Gradient -->
+    <linearGradient id="woodGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8B5A2B" />
+      <stop offset="20%" stop-color="#A67C52" />
+      <stop offset="40%" stop-color="#8B5A2B" />
+      <stop offset="60%" stop-color="#A67C52" />
+      <stop offset="80%" stop-color="#8B5A2B" />
+      <stop offset="100%" stop-color="#A67C52" />
+    </linearGradient>
+    
+    <!-- Ceramic Bowl Gradient -->
+    <radialGradient id="bowlGradient" cx="50%" cy="50%" r="70%" fx="40%" fy="40%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="60%" stop-color="#F8F8F8" />
+      <stop offset="100%" stop-color="#EEEEEE" />
+    </radialGradient>
+    
+    <!-- Bowl Inside Gradient -->
+    <radialGradient id="bowlInsideGradient" cx="50%" cy="40%" r="70%" fx="45%" fy="35%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F5F5F5" />
+    </radialGradient>
+    
+    <!-- Cucumber Gradient -->
+    <linearGradient id="cucumberGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7CB342" />
+      <stop offset="100%" stop-color="#558B2F" />
+    </linearGradient>
+    
+    <!-- Cucumber Inside Gradient -->
+    <radialGradient id="cucumberInsideGradient" cx="50%" cy="50%" r="60%" fx="40%" fy="40%">
+      <stop offset="0%" stop-color="#AED581" />
+      <stop offset="100%" stop-color="#8BC34A" />
+    </radialGradient>
+    
+    <!-- Tomato Gradient -->
+    <radialGradient id="tomatoGradient" cx="50%" cy="40%" r="70%" fx="35%" fy="30%">
+      <stop offset="0%" stop-color="#E53935" />
+      <stop offset="100%" stop-color="#C62828" />
+    </radialGradient>
+    
+    <!-- Tomato Inside Gradient -->
+    <radialGradient id="tomatoInsideGradient" cx="50%" cy="50%" r="70%" fx="40%" fy="40%">
+      <stop offset="0%" stop-color="#EF5350" />
+      <stop offset="100%" stop-color="#E53935" />
+    </radialGradient>
+    
+    <!-- Red Onion Gradient -->
+    <linearGradient id="onionGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9C27B0" />
+      <stop offset="100%" stop-color="#7B1FA2" />
+    </linearGradient>
+    
+    <!-- Red Onion Inside Gradient -->
+    <linearGradient id="onionInsideGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#BA68C8" />
+      <stop offset="100%" stop-color="#9C27B0" />
+    </linearGradient>
+    
+    <!-- Bell Pepper Gradient -->
+    <linearGradient id="pepperGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#43A047" />
+      <stop offset="100%" stop-color="#2E7D32" />
+    </linearGradient>
+    
+    <!-- Bell Pepper Inside Gradient -->
+    <linearGradient id="pepperInsideGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#66BB6A" />
+      <stop offset="100%" stop-color="#43A047" />
+    </linearGradient>
+    
+    <!-- Feta Cheese Gradient -->
+    <linearGradient id="fetaGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F5F5F5" />
+    </linearGradient>
+    
+    <!-- Olive Oil Gradient -->
+    <radialGradient id="oliveOilGradient" cx="50%" cy="50%" r="70%" fx="40%" fy="40%">
+      <stop offset="0%" stop-color="#FFEB3B" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#FFC107" stop-opacity="0.1" />
+    </radialGradient>
+    
+    <!-- Olive Gradient -->
+    <radialGradient id="oliveGradient" cx="50%" cy="50%" r="60%" fx="35%" fy="35%">
+      <stop offset="0%" stop-color="#33691E" />
+      <stop offset="100%" stop-color="#1B5E20" />
+    </radialGradient>
+    
+    <!-- Lettuce Gradient -->
+    <linearGradient id="lettuceGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7CB342" />
+      <stop offset="100%" stop-color="#558B2F" />
+    </linearGradient>
+    
+    <!-- Lettuce Inside Gradient -->
+    <linearGradient id="lettuceInsideGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9CCC65" />
+      <stop offset="100%" stop-color="#7CB342" />
+    </linearGradient>
+    
+    <!-- Drop Shadow Filter -->
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2" />
+      <feOffset dx="0" dy="2" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    
+    <!-- Soft Shadow Filter -->
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="1" />
+      <feOffset dx="0" dy="1" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.2" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    
+    <!-- Inner Shadow Filter -->
+    <filter id="innerShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="1.5" />
+      <feOffset dx="0" dy="1" />
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.4" />
+      </feComponentTransfer>
+      <feComposite in2="SourceGraphic" operator="in" />
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    
+    <!-- Highlight Filter -->
+    <filter id="highlightFilter" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="1" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3" />
+      </feComponentTransfer>
+      <feComposite in="SourceGraphic" />
+    </filter>
+    
+    <!-- Shine Pattern -->
+    <pattern id="shinePattern" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect width="20" height="20" fill="white" opacity="0.05" />
+      <circle cx="10" cy="10" r="5" fill="white" opacity="0.1" />
+    </pattern>
+  </defs>
+  
+  <!-- Wooden Table -->
+  <rect x="0" y="175" width="200" height="25" fill="url(#woodGradient)" />
+  <path d="M0,180 L200,183 M0,190 L200,187 M0,195 L200,193" stroke="#5D4037" stroke-width="0.3" fill="none" opacity="0.3" />
+  
+  <!-- Bowl Shadow on Table -->
+  <ellipse cx="100" cy="175" rx="65" ry="10" fill="rgba(0,0,0,0.15)" filter="url(#softShadow)" />
+  
+  <!-- Ceramic Bowl -->
+  <g filter="url(#dropShadow)">
+    <!-- Bowl Outside -->
+    <ellipse cx="100" cy="150" rx="60" ry="20" fill="url(#bowlGradient)" />
+    <ellipse cx="100" cy="150" rx="60" ry="20" fill="none" stroke="#E0E0E0" stroke-width="0.8" />
+    
+    <!-- Bowl Inside -->
+    <ellipse cx="100" cy="140" rx="50" ry="15" fill="url(#bowlInsideGradient)" />
+    
+    <!-- Bowl Rim -->
+    <path d="M50,150 
+            A60,20 0 0,1 150,150" 
+          fill="none" 
+          stroke="#E0E0E0" 
+          stroke-width="1" />
+    
+    <!-- Bowl Highlight -->
+    <ellipse cx="85" cy="135" rx="15" ry="5" fill="#FFFFFF" opacity="0.2" filter="url(#highlightFilter)" />
+  </g>
+  
+  <!-- Salad Contents -->
+  <g transform="translate(100, 140)">
+    <!-- Lettuce Base Layer -->
+    <g>
+      <path d="M-40,-2 
+              C-30,-5 -20,-7 -10,-8
+              C0,-9 10,-8 20,-7
+              C30,-5 40,-3 45,0
+              C40,3 30,5 20,7
+              C10,8 0,9 -10,8
+              C-20,7 -30,5 -40,2 Z" 
+            fill="url(#lettuceGradient)" 
+            opacity="0.9" />
+      
+      <!-- Lettuce Texture -->
+      <path d="M-35,-1 
+              C-25,-3 -15,-5 -5,-6
+              C5,-7 15,-6 25,-5
+              C35,-3 45,-1 40,1" 
+            fill="none" 
+            stroke="url(#lettuceInsideGradient)" 
+            stroke-width="0.8" 
+            opacity="0.8" />
+      
+      <path d="M-38,1 
+              C-28,-1 -18,-3 -8,-4
+              C2,-5 12,-4 22,-3
+              C32,-1 42,1 37,3" 
+            fill="none" 
+            stroke="url(#lettuceInsideGradient)" 
+            stroke-width="0.8" 
+            opacity="0.8" />
+    </g>
+    
+    <!-- Cucumber Slices -->
+    <g>
+      <!-- Cucumber Slice 1 -->
+      <ellipse cx="-25" cy="2" rx="8" ry="3" transform="rotate(20 -25 2)" fill="url(#cucumberGradient)" />
+      <ellipse cx="-25" cy="2" rx="6" ry="2" transform="rotate(20 -25 2)" fill="url(#cucumberInsideGradient)" />
+      <ellipse cx="-25" cy="2" rx="4" ry="1.5" transform="rotate(20 -25 2)" fill="url(#cucumberGradient)" opacity="0.2" />
+      <ellipse cx="-25" cy="2" rx="2" ry="0.8" transform="rotate(20 -25 2)" fill="url(#cucumberInsideGradient)" opacity="0.3" />
+      
+      <!-- Cucumber Slice 2 -->
+      <ellipse cx="15" cy="4" rx="7" ry="2.5" transform="rotate(-15 15 4)" fill="url(#cucumberGradient)" />
+      <ellipse cx="15" cy="4" rx="5" ry="1.8" transform="rotate(-15 15 4)" fill="url(#cucumberInsideGradient)" />
+      <ellipse cx="15" cy="4" rx="3" ry="1.2" transform="rotate(-15 15 4)" fill="url(#cucumberGradient)" opacity="0.2" />
+      <ellipse cx="15" cy="4" rx="1.5" ry="0.6" transform="rotate(-15 15 4)" fill="url(#cucumberInsideGradient)" opacity="0.3" />
+      
+      <!-- Cucumber Slice 3 -->
+      <ellipse cx="30" cy="-1" rx="6" ry="2" transform="rotate(10 30 -1)" fill="url(#cucumberGradient)" />
+      <ellipse cx="30" cy="-1" rx="4.5" ry="1.5" transform="rotate(10 30 -1)" fill="url(#cucumberInsideGradient)" />
+      <ellipse cx="30" cy="-1" rx="3" ry="1" transform="rotate(10 30 -1)" fill="url(#cucumberGradient)" opacity="0.2" />
+      <ellipse cx="30" cy="-1" rx="1.5" ry="0.5" transform="rotate(10 30 -1)" fill="url(#cucumberInsideGradient)" opacity="0.3" />
+    </g>
+    
+    <!-- Tomato Wedges -->
+    <g>
+      <!-- Tomato Wedge 1 -->
+      <path d="M-10,-5 
+              C-12,-8 -8,-12 -5,-10
+              C-2,-8 0,-5 -5,0
+              C-10,-2 -10,-5 -10,-5 Z" 
+            fill="url(#tomatoGradient)" />
+      
+      <path d="M-8,-8 
+              C-6,-6 -4,-4 -5,0" 
+            fill="none" 
+            stroke="url(#tomatoInsideGradient)" 
+            stroke-width="0.5" 
+            opacity="0.8" />
+      
+      <!-- Tomato Wedge 2 -->
+      <path d="M5,-10 
+              C3,-13 7,-17 10,-15
+              C13,-13 15,-10 10,-5
+              C5,-7 5,-10 5,-10 Z" 
+            fill="url(#tomatoGradient)" 
+            transform="rotate(40 5 -10)" />
+      
+      <path d="M7,-13 
+              C9,-11 11,-9 10,-5" 
+            fill="none" 
+            stroke="url(#tomatoInsideGradient)" 
+            stroke-width="0.5" 
+            opacity="0.8" 
+            transform="rotate(40 5 -10)" />
+      
+      <!-- Tomato Wedge 3 -->
+      <path d="M-25,-10 
+              C-27,-13 -23,-17 -20,-15
+              C-17,-13 -15,-10 -20,-5
+              C-25,-7 -25,-10 -25,-10 Z" 
+            fill="url(#tomatoGradient)" 
+            transform="rotate(-30 -25 -10)" />
+      
+      <path d="M-23,-13 
+              C-21,-11 -19,-9 -20,-5" 
+            fill="none" 
+            stroke="url(#tomatoInsideGradient)" 
+            stroke-width="0.5" 
+            opacity="0.8" 
+            transform="rotate(-30 -25 -10)" />
+    </g>
+    
+    <!-- Red Onion Slices -->
+    <g>
+      <!-- Onion Slice 1 -->
+      <ellipse cx="-5" cy="8" rx="8" ry="3" transform="rotate(-10 -5 8)" fill="url(#onionGradient)" />
+      <ellipse cx="-5" cy="8" rx="6" ry="2" transform="rotate(-10 -5 8)" fill="url(#onionInsideGradient)" opacity="0.7" />
+      <ellipse cx="-5" cy="8" rx="4" ry="1.5" transform="rotate(-10 -5 8)" fill="url(#onionGradient)" opacity="0.5" />
+      <ellipse cx="-5" cy="8" rx="2" ry="0.8" transform="rotate(-10 -5 8)" fill="white" opacity="0.3" />
+      
+      <!-- Onion Slice 2 -->
+      <ellipse cx="20" cy="0" rx="7" ry="2.5" transform="rotate(15 20 0)" fill="url(#onionGradient)" />
+      <ellipse cx="20" cy="0" rx="5" ry="1.8" transform="rotate(15 20 0)" fill="url(#onionInsideGradient)" opacity="0.7" />
+      <ellipse cx="20" cy="0" rx="3" ry="1.2" transform="rotate(15 20 0)" fill="url(#onionGradient)" opacity="0.5" />
+      <ellipse cx="20" cy="0" rx="1.5" ry="0.6" transform="rotate(15 20 0)" fill="white" opacity="0.3" />
+    </g>
+    
+    <!-- Bell Pepper Slices -->
+    <g>
+      <!-- Pepper Slice 1 -->
+      <path d="M-35,5 
+              C-34,2 -31,0 -28,1
+              C-25,2 -24,5 -26,7
+              C-28,9 -31,10 -33,8
+              C-35,6 -35,5 -35,5 Z" 
+            fill="url(#pepperGradient)" 
+            opacity="0.9" />
+      
+      <path d="M-32,3 
+              C-30,4 -28,6 -29,8" 
+            fill="none" 
+            stroke="url(#pepperInsideGradient)" 
+            stroke-width="0.5" 
+            opacity="0.8" />
+      
+      <!-- Pepper Slice 2 -->
+      <path d="M0,15 
+              C1,12 4,10 7,11
+              C10,12 11,15 9,17
+              C7,19 4,20 2,18
+              C0,16 0,15 0,15 Z" 
+            fill="url(#pepperGradient)" 
+            opacity="0.9" 
+            transform="rotate(-20 0 15)" />
+      
+      <path d="M3,13 
+              C5,14 7,16 6,18" 
+            fill="none" 
+            stroke="url(#pepperInsideGradient)" 
+            stroke-width="0.5" 
+            opacity="0.8" 
+            transform="rotate(-20 0 15)" />
+    </g>
+    
+    <!-- Feta Cheese Cubes -->
+    <g filter="url(#softShadow)">
+      <!-- Feta Cube 1 -->
+      <rect x="-15" y="-15" width="8" height="8" rx="1" ry="1" transform="rotate(15 -15 -15)" fill="url(#fetaGradient)" />
+      <rect x="-15" y="-15" width="8" height="8" rx="1" ry="1" transform="rotate(15 -15 -15)" fill="url(#shinePattern)" />
+      
+      <!-- Feta Cube 2 -->
+      <rect x="5" y="-5" width="7" height="7" rx="1" ry="1" transform="rotate(-10 5 -5)" fill="url(#fetaGradient)" />
+      <rect x="5" y="-5" width="7" height="7" rx="1" ry="1" transform="rotate(-10 5 -5)" fill="url(#shinePattern)" />
+      
+      <!-- Feta Cube 3 -->
+      <rect x="-20" y="10" width="6" height="6" rx="1" ry="1" transform="rotate(5 -20 10)" fill="url(#fetaGradient)" />
+      <rect x="-20" y="10" width="6" height="6" rx="1" ry="1" transform="rotate(5 -20 10)" fill="url(#shinePattern)" />
+      
+      <!-- Feta Crumbles -->
+      <circle cx="15" cy="-12" r="2" fill="url(#fetaGradient)" />
+      <circle cx="15" cy="-12" r="2" fill="url(#shinePattern)" />
+      
+      <circle cx="25" cy="8" r="2.5" fill="url(#fetaGradient)" />
+      <circle cx="25" cy="8" r="2.5" fill="url(#shinePattern)" />
+      
+      <ellipse cx="-30" cy="-5" rx="2" ry="1.5" fill="url(#fetaGradient)" transform="rotate(-5 -30 -5)" />
+      <ellipse cx="-30" cy="-5" rx="2" ry="1.5" fill="url(#shinePattern)" transform="rotate(-5 -30 -5)" />
+      
+      <path d="M10,12 L13,10 L15,12 L12,15 Z" fill="url(#fetaGradient)" transform="rotate(10 10 12)" />
+      <path d="M10,12 L13,10 L15,12 L12,15 Z" fill="url(#shinePattern)" transform="rotate(10 10 12)" />
+    </g>
+    
+    <!-- Olives -->
+    <g>
+      <!-- Olive 1 -->
+      <ellipse cx="-8" cy="-20" rx="4" ry="3" transform="rotate(30 -8 -20)" fill="url(#oliveGradient)" />
+      <ellipse cx="-9" cy="-21" rx="1.5" ry="1" transform="rotate(30 -8 -20)" fill="#FFFFFF" opacity="0.2" />
+      
+      <!-- Olive 2 -->
+      <ellipse cx="25" cy="-15" rx="3.5" ry="2.5" transform="rotate(-15 25 -15)" fill="url(#oliveGradient)" />
+      <ellipse cx="24" cy="-16" rx="1.2" ry="0.8" transform="rotate(-15 25 -15)" fill="#FFFFFF" opacity="0.2" />
+      
+      <!-- Olive 3 -->
+      <ellipse cx="-25" cy="12" rx="3" ry="2" transform="rotate(10 -25 12)" fill="url(#oliveGradient)" />
+      <ellipse cx="-26" cy="11" rx="1" ry="0.7" transform="rotate(10 -25 12)" fill="#FFFFFF" opacity="0.2" />
+    </g>
+    
+    <!-- Olive Oil Drizzle -->
+    <g opacity="0.6">
+      <path d="M-30,-10 
+              C-25,-8 -20,-12 -15,-8
+              C-10,-4 -5,-10 0,-6
+              C5,-2 10,-7 15,-3
+              C20,1 25,-5 30,-1" 
+            fill="none" 
+            stroke="url(#oliveOilGradient)" 
+            stroke-width="1.5" 
+            stroke-linecap="round" />
+      
+      <path d="M-25,0 
+              C-20,4 -15,-2 -10,2
+              C-5,6 0,0 5,4
+              C10,8 15,2 20,6" 
+            fill="none" 
+            stroke="url(#oliveOilGradient)" 
+            stroke-width="1.5" 
+            stroke-linecap="round" />
+    </g>
+  </g>
+  
+  <!-- Fork Peeking Over Edge -->
+  <g filter="url(#dropShadow)" transform="translate(150, 130) rotate(-30)">
+    <!-- Fork Handle -->
+    <rect x="-2" y="0" width="4" height="25" rx="1" ry="1" fill="#BDBDBD" />
+    
+    <!-- Fork Prongs -->
+    <rect x="-6" y="-10" width="1.5" height="15" rx="0.5" ry="0.5" fill="#9E9E9E" />
+    <rect x="-2" y="-12" width="1.5" height="17" rx="0.5" ry="0.5" fill="#9E9E9E" />
+    <rect x="2" y="-10" width="1.5" height="15" rx="0.5" ry="0.5" fill="#9E9E9E" />
+    <rect x="6" y="-9" width="1.5" height="14" rx="0.5" ry="0.5" fill="#9E9E9E" />
+    
+    <!-- Fork Base -->
+    <rect x="-7" y="-1" width="14" height="3" rx="1" ry="1" fill="#9E9E9E" />
+    
+    <!-- Fork Highlights -->
+    <rect x="-6" y="-10" width="1.5" height="5" rx="0.5" ry="0.5" fill="#E0E0E0" opacity="0.4" />
+    <rect x="-2" y="-12" width="1.5" height="5" rx="0.5" ry="0.5" fill="#E0E0E0" opacity="0.4" />
+    <rect x="2" y="-10" width="1.5" height="5" rx="0.5" ry="0.5" fill="#E0E0E0" opacity="0.4" />
+    <rect x="6" y="-9" width="1.5" height="5" rx="0.5" ry="0.5" fill="#E0E0E0" opacity="0.4" />
+  </g>
+  
+  <!-- Small Herbs and Seasoning -->
+  <g>
+    <path d="M80,130 C79,129 80,128 81,129 C82,128 83,129 82,130" fill="url(#lettuceGradient)" />
+    <path d="M125,125 C124,124 125,123 126,124 C127,123 128,124 127,125" fill="url(#lettuceGradient)" />
+    <path d="M70,150 C69,149 70,148 71,149" fill="url(#lettuceGradient)" />
+    <circle cx="110" cy="155" r="0.5" fill="#B71C1C" opacity="0.7" />
+    <circle cx="90" cy="145" r="0.5" fill="#B71C1C" opacity="0.7" />
+    <circle cx="130" cy="140" r="0.5" fill="#B71C1C" opacity="0.7" />
+  </g>
+</svg>
