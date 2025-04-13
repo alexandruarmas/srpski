@@ -7,13 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next build",
-    "fix-paths": "node fix-public-paths.js",
-    "fix-icons": "node fix-icons.js",
-    "copy-svg": "node copy-svg-directly.js",
-    "fix-html": "node fix-html-directly.js",
-    "predeploy": "npm run build && npm run fix-paths && npm run fix-icons && npm run copy-svg && npm run fix-html",
-    "deploy": "touch out/.nojekyll && gh-pages -d out --dotfiles"
+    "export": "next build"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
