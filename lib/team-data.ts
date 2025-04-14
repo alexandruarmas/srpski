@@ -15,7 +15,7 @@ export type TeamMember = {
 export const teamMembers: TeamMember[] = [
   {
     id: "team1",
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/srpski/images/team/milan.svg",
     translations: {
       en: {
         name: "Milan Petrović",
@@ -36,7 +36,7 @@ export const teamMembers: TeamMember[] = [
   },
   {
     id: "team2",
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/srpski/images/team/ana.svg",
     translations: {
       en: {
         name: "Ana Popescu",
@@ -57,7 +57,7 @@ export const teamMembers: TeamMember[] = [
   },
   {
     id: "team3",
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/srpski/images/team/nikola.svg",
     translations: {
       en: {
         name: "Nikola Jovanović",

@@ -25,12 +25,12 @@ function StaticHome() {
               <span className="block text-[#f8e9d2]">{t("home.hero.subtitle")}</span>
             </h1>
             <div className="mt-10 flex flex-col justify-center gap-3 sm:flex-row lg:justify-start">
-              <Button asChild className="bg-[#f8e9d2] text-[#4b1d0f] hover:bg-[#f8e9d2]/90">
+              <Button asChild className="bg-red-600 text-white hover:bg-[#f8e9d2] hover:text-[#4b1d0f]">
                 <Link href="/menu" className="inline-flex items-center px-8 py-3">
                   {t("home.hero.order")}
                 </Link>
               </Button>
-              <Button variant="outline" asChild className="bg-white/10 text-white border-[#f8e9d2] hover:bg-white/20">
+              <Button variant="outline" asChild className="bg-white/10 text-white border-[#f8e9d2] hover:bg-[#f8e9d2] hover:text-[#4b1d0f]">
                 <Link href="/about" className="inline-flex items-center px-8 py-3">
                   {t("nav.about")}
                 </Link>
@@ -43,7 +43,7 @@ function StaticHome() {
               <img 
                 src="/srpski/images/gif.gif" 
                 alt="Delicious burger"
-                className="h-full object-contain z-10 relative"
+                className="h-auto w-auto max-h-[120%] object-contain z-10 relative scale-125"
               />
             </div>
           </div>
@@ -70,7 +70,7 @@ function StaticHome() {
                     src={burger.image || "/srpski/placeholder.svg"}
                     alt={burger.translations[language].name}
                     fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="object-contain p-6 transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
                 <div className="p-8">
@@ -84,9 +84,8 @@ function StaticHome() {
                     <span className="text-lg font-medium text-[#4b1d0f]">{burger.price} RON</span>
                     <Button
                       asChild
-                      variant="outline"
                       size="sm"
-                      className="rounded-full border-[#4b1d0f] text-[#4b1d0f] hover:bg-[#f8e9d2] hover:text-[#331409]"
+                      className="rounded-full bg-[#f8e9d2] text-[#4b1d0f] hover:bg-red-600 hover:text-white"
                     >
                       <Link href="/order">{t("home.cta.button")}</Link>
                     </Button>
@@ -155,7 +154,7 @@ function StaticHome() {
             
             <div className="relative h-96 w-full overflow-hidden rounded-2xl lg:w-2/5">
               <Image
-                src="/srpski/placeholder.svg?height=800&width=600"
+                src="/srpski/images/restaurant.svg"
                 alt="Restaurant interior"
                 fill
                 className="object-cover"
@@ -175,7 +174,7 @@ function StaticHome() {
             <p className="mx-auto max-w-2xl text-xl font-light text-[#f8e9d2]/90">
               {t("home.cta.subtitle")}
             </p>
-            <Button asChild size="lg" className="rounded-full bg-[#f8e9d2] text-[#4b1d0f] hover:bg-[#f8e9d2]/90 text-base px-10 shadow-md hover:shadow-lg transition-all">
+            <Button asChild size="lg" className="rounded-full bg-red-600 text-white hover:bg-[#f8e9d2] hover:text-[#4b1d0f] text-base px-10 shadow-md hover:shadow-lg transition-all">
               <Link href="/order">{t("home.cta.button")}</Link>
             </Button>
           </div>
@@ -235,12 +234,12 @@ function AnimatedHome() {
                 transition={{ duration: 0.5, delay: 0.5 }}
                 className="mt-10 flex flex-col justify-center gap-3 sm:flex-row lg:justify-start"
               >
-                <Button asChild className="bg-[#f8e9d2] text-[#4b1d0f] hover:bg-[#f8e9d2]/90">
+                <Button asChild className="bg-red-600 text-white hover:bg-[#f8e9d2] hover:text-[#4b1d0f]">
                   <Link href="/menu" className="inline-flex items-center px-8 py-3">
                     {t("home.hero.order")}
                   </Link>
                 </Button>
-                <Button variant="outline" asChild className="bg-white/10 text-white border-[#f8e9d2] hover:bg-white/20">
+                <Button variant="outline" asChild className="bg-white/10 text-white border-[#f8e9d2] hover:bg-[#f8e9d2] hover:text-[#4b1d0f]">
                   <Link href="/about" className="inline-flex items-center px-8 py-3">
                     {t("nav.about")}
                   </Link>
@@ -259,7 +258,7 @@ function AnimatedHome() {
               <img 
                 src="/srpski/images/gif.gif" 
                 alt="Delicious burger"
-                className="h-full object-contain z-10 relative"
+                className="h-auto w-auto max-h-[120%] object-contain z-10 relative scale-125"
               />
             </div>
           </motion.div>
@@ -296,7 +295,7 @@ function AnimatedHome() {
                     src={burger.image || "/srpski/placeholder.svg"}
                     alt={burger.translations[language].name}
                     fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="object-contain p-6 transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
                 <div className="p-8">
@@ -310,9 +309,8 @@ function AnimatedHome() {
                     <span className="text-lg font-medium text-[#4b1d0f]">{burger.price} RON</span>
                     <Button
                       asChild
-                      variant="outline"
                       size="sm"
-                      className="rounded-full border-[#4b1d0f] text-[#4b1d0f] hover:bg-[#f8e9d2] hover:text-[#331409]"
+                      className="rounded-full bg-[#f8e9d2] text-[#4b1d0f] hover:bg-red-600 hover:text-white"
                     >
                       <Link href="/order">{t("home.cta.button")}</Link>
                     </Button>
@@ -399,7 +397,7 @@ function AnimatedHome() {
               className="relative h-96 w-full overflow-hidden rounded-2xl lg:w-2/5"
             >
               <Image
-                src="/srpski/placeholder.svg?height=800&width=600"
+                src="/srpski/images/restaurant.svg"
                 alt="Restaurant interior"
                 fill
                 className="object-cover"
@@ -425,7 +423,7 @@ function AnimatedHome() {
             <p className="mx-auto max-w-2xl text-xl font-light text-[#f8e9d2]/90">
               {t("home.cta.subtitle")}
             </p>
-            <Button asChild size="lg" className="rounded-full bg-[#f8e9d2] text-[#4b1d0f] hover:bg-[#f8e9d2]/90 text-base px-10 shadow-md hover:shadow-lg transition-all">
+            <Button asChild size="lg" className="rounded-full bg-red-600 text-white hover:bg-[#f8e9d2] hover:text-[#4b1d0f] text-base px-10 shadow-md hover:shadow-lg transition-all">
               <Link href="/order">{t("home.cta.button")}</Link>
             </Button>
           </motion.div>

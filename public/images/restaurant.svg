@@ -1,0 +1,168 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="floorGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5a2b" />
+      <stop offset="100%" stop-color="#6b4423" />
+    </linearGradient>
+    <linearGradient id="wallGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f8f4ec" />
+      <stop offset="100%" stop-color="#e8e4dc" />
+    </linearGradient>
+    <linearGradient id="tableGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5d4037" />
+      <stop offset="100%" stop-color="#4e342e" />
+    </linearGradient>
+    <linearGradient id="chairGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4b1d0f" />
+      <stop offset="100%" stop-color="#331409" />
+    </linearGradient>
+    <linearGradient id="windowGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#87ceeb" />
+      <stop offset="100%" stop-color="#4682b4" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background/Wall -->
+  <rect width="800" height="600" fill="url(#wallGradient)" />
+  
+  <!-- Floor -->
+  <rect x="0" y="400" width="800" height="200" fill="url(#floorGradient)" />
+  
+  <!-- Ceiling beams -->
+  <rect x="0" y="50" width="800" height="15" fill="#5d4037" />
+  <rect x="0" y="150" width="800" height="10" fill="#5d4037" />
+  
+  <!-- Windows -->
+  <rect x="50" y="100" width="120" height="200" fill="url(#windowGradient)" />
+  <rect x="200" y="100" width="120" height="200" fill="url(#windowGradient)" />
+  <rect x="500" y="100" width="120" height="200" fill="url(#windowGradient)" />
+  <rect x="650" y="100" width="120" height="200" fill="url(#windowGradient)" />
+  
+  <!-- Window frames -->
+  <rect x="50" y="100" width="120" height="10" fill="#5d4037" />
+  <rect x="50" y="200" width="120" height="10" fill="#5d4037" />
+  <rect x="50" y="100" width="10" height="200" fill="#5d4037" />
+  <rect x="160" y="100" width="10" height="200" fill="#5d4037" />
+  <rect x="105" y="100" width="10" height="200" fill="#5d4037" />
+  
+  <rect x="200" y="100" width="120" height="10" fill="#5d4037" />
+  <rect x="200" y="200" width="120" height="10" fill="#5d4037" />
+  <rect x="200" y="100" width="10" height="200" fill="#5d4037" />
+  <rect x="310" y="100" width="10" height="200" fill="#5d4037" />
+  <rect x="255" y="100" width="10" height="200" fill="#5d4037" />
+  
+  <rect x="500" y="100" width="120" height="10" fill="#5d4037" />
+  <rect x="500" y="200" width="120" height="10" fill="#5d4037" />
+  <rect x="500" y="100" width="10" height="200" fill="#5d4037" />
+  <rect x="610" y="100" width="10" height="200" fill="#5d4037" />
+  <rect x="555" y="100" width="10" height="200" fill="#5d4037" />
+  
+  <rect x="650" y="100" width="120" height="10" fill="#5d4037" />
+  <rect x="650" y="200" width="120" height="10" fill="#5d4037" />
+  <rect x="650" y="100" width="10" height="200" fill="#5d4037" />
+  <rect x="760" y="100" width="10" height="200" fill="#5d4037" />
+  <rect x="705" y="100" width="10" height="200" fill="#5d4037" />
+  
+  <!-- Tables and chairs in the foreground -->
+  <!-- Table 1 -->
+  <rect x="100" y="450" width="120" height="70" rx="5" fill="url(#tableGradient)" />
+  <rect x="105" y="520" width="10" height="50" fill="#3e2723" />
+  <rect x="205" y="520" width="10" height="50" fill="#3e2723" />
+  
+  <!-- Chairs for Table 1 -->
+  <rect x="70" y="470" width="20" height="20" rx="2" fill="url(#chairGradient)" />
+  <rect x="75" y="490" width="10" height="30" fill="#3e2723" />
+  
+  <rect x="230" y="470" width="20" height="20" rx="2" fill="url(#chairGradient)" />
+  <rect x="235" y="490" width="10" height="30" fill="#3e2723" />
+  
+  <!-- Table 2 -->
+  <rect x="350" y="470" width="120" height="70" rx="5" fill="url(#tableGradient)" />
+  <rect x="355" y="540" width="10" height="30" fill="#3e2723" />
+  <rect x="455" y="540" width="10" height="30" fill="#3e2723" />
+  
+  <!-- Chairs for Table 2 -->
+  <rect x="320" y="490" width="20" height="20" rx="2" fill="url(#chairGradient)" />
+  <rect x="325" y="510" width="10" height="30" fill="#3e2723" />
+  
+  <rect x="480" y="490" width="20" height="20" rx="2" fill="url(#chairGradient)" />
+  <rect x="485" y="510" width="10" height="30" fill="#3e2723" />
+  
+  <!-- Table 3 -->
+  <rect x="600" y="450" width="120" height="70" rx="5" fill="url(#tableGradient)" />
+  <rect x="605" y="520" width="10" height="50" fill="#3e2723" />
+  <rect x="705" y="520" width="10" height="50" fill="#3e2723" />
+  
+  <!-- Chairs for Table 3 -->
+  <rect x="570" y="470" width="20" height="20" rx="2" fill="url(#chairGradient)" />
+  <rect x="575" y="490" width="10" height="30" fill="#3e2723" />
+  
+  <rect x="730" y="470" width="20" height="20" rx="2" fill="url(#chairGradient)" />
+  <rect x="735" y="490" width="10" height="30" fill="#3e2723" />
+  
+  <!-- Background elements -->
+  <!-- Bar counter -->
+  <rect x="350" y="300" width="300" height="50" rx="5" fill="#795548" />
+  <rect x="350" y="350" width="300" height="10" fill="#5d4037" />
+  <rect x="370" y="250" width="260" height="50" fill="#8d6e63" />
+  
+  <!-- Bar stools -->
+  <ellipse cx="400" cy="380" rx="15" ry="10" fill="url(#chairGradient)" />
+  <rect x="395" y="380" width="10" height="30" fill="#3e2723" />
+  
+  <ellipse cx="450" cy="380" rx="15" ry="10" fill="url(#chairGradient)" />
+  <rect x="445" y="380" width="10" height="30" fill="#3e2723" />
+  
+  <ellipse cx="500" cy="380" rx="15" ry="10" fill="url(#chairGradient)" />
+  <rect x="495" y="380" width="10" height="30" fill="#3e2723" />
+  
+  <ellipse cx="550" cy="380" rx="15" ry="10" fill="url(#chairGradient)" />
+  <rect x="545" y="380" width="10" height="30" fill="#3e2723" />
+  
+  <ellipse cx="600" cy="380" rx="15" ry="10" fill="url(#chairGradient)" />
+  <rect x="595" y="380" width="10" height="30" fill="#3e2723" />
+  
+  <!-- Bottles on the bar -->
+  <rect x="380" y="220" width="10" height="30" fill="#4caf50" opacity="0.7" />
+  <rect x="400" y="220" width="10" height="25" fill="#2196f3" opacity="0.7" />
+  <rect x="420" y="220" width="10" height="28" fill="#ff9800" opacity="0.7" />
+  <rect x="440" y="220" width="10" height="22" fill="#9c27b0" opacity="0.7" />
+  <rect x="460" y="220" width="10" height="27" fill="#e91e63" opacity="0.7" />
+  <rect x="480" y="220" width="10" height="24" fill="#03a9f4" opacity="0.7" />
+  <rect x="500" y="220" width="10" height="30" fill="#cddc39" opacity="0.7" />
+  <rect x="520" y="220" width="10" height="25" fill="#673ab7" opacity="0.7" />
+  <rect x="540" y="220" width="10" height="28" fill="#ffc107" opacity="0.7" />
+  <rect x="560" y="220" width="10" height="23" fill="#8bc34a" opacity="0.7" />
+  <rect x="580" y="220" width="10" height="26" fill="#f44336" opacity="0.7" />
+  <rect x="600" y="220" width="10" height="29" fill="#3f51b5" opacity="0.7" />
+  
+  <!-- Decorative elements -->
+  <!-- Wall decoration/art -->
+  <rect x="350" y="80" width="120" height="80" fill="#d7ccc8" stroke="#5d4037" stroke-width="4" />
+  
+  <!-- Plants -->
+  <ellipse cx="50" cy="350" rx="20" ry="10" fill="#5d4037" />
+  <path d="M30,340 Q50,310 70,340" stroke="#388e3c" stroke-width="2" fill="none" />
+  <path d="M35,340 Q50,300 65,340" stroke="#388e3c" stroke-width="2" fill="none" />
+  <path d="M40,340 Q50,305 60,340" stroke="#388e3c" stroke-width="2" fill="none" />
+  <path d="M45,340 Q50,315 55,340" stroke="#388e3c" stroke-width="2" fill="none" />
+  
+  <ellipse cx="750" cy="350" rx="20" ry="10" fill="#5d4037" />
+  <path d="M730,340 Q750,310 770,340" stroke="#388e3c" stroke-width="2" fill="none" />
+  <path d="M735,340 Q750,300 765,340" stroke="#388e3c" stroke-width="2" fill="none" />
+  <path d="M740,340 Q750,305 760,340" stroke="#388e3c" stroke-width="2" fill="none" />
+  <path d="M745,340 Q750,315 755,340" stroke="#388e3c" stroke-width="2" fill="none" />
+  
+  <!-- Lighting fixtures -->
+  <path d="M200,50 L200,100" stroke="#5d4037" stroke-width="3" />
+  <ellipse cx="200" cy="100" rx="20" ry="10" fill="#fff59d" opacity="0.9" />
+  
+  <path d="M400,50 L400,100" stroke="#5d4037" stroke-width="3" />
+  <ellipse cx="400" cy="100" rx="20" ry="10" fill="#fff59d" opacity="0.9" />
+  
+  <path d="M600,50 L600,100" stroke="#5d4037" stroke-width="3" />
+  <ellipse cx="600" cy="100" rx="20" ry="10" fill="#fff59d" opacity="0.9" />
+  
+  <!-- Ambient light effect -->
+  <rect width="800" height="600" fill="rgba(244, 223, 186, 0.15)" />
+</svg> 

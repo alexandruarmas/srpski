@@ -68,7 +68,7 @@ export default function ContactPage() {
               />
             </div>
 
-            <Button type="submit" className="w-full bg-[#4b1d0f] hover:bg-[#331409] text-white">
+            <Button type="submit" className="w-full rounded-full bg-[#f8e9d2] text-[#4b1d0f] hover:bg-[#4b1d0f] hover:text-white">
               {t("contact.form.submit")}
             </Button>
           </form>

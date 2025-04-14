@@ -51,7 +51,7 @@ export function MainNav() {
         <div className="flex items-center gap-3">
           <Link 
             href="/order" 
-            className="bg-[#4b1d0f] text-[#f8e9d2] px-4 py-2 rounded-full text-sm font-medium shadow-sm hover:shadow-md transition-all duration-200"
+            className="rounded-full bg-[#f8e9d2] text-[#4b1d0f] hover:bg-[#4b1d0f] hover:text-white px-4 py-2 text-sm font-medium shadow-sm hover:shadow-md transition-all duration-200"
           >
             {t("nav.order")}
           </Link>

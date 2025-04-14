@@ -1,0 +1,66 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skinGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e5b490" />
+      <stop offset="100%" stop-color="#c99876" />
+    </linearGradient>
+    <linearGradient id="hairGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2b2b2b" />
+      <stop offset="100%" stop-color="#1a1a1a" />
+    </linearGradient>
+    <linearGradient id="apronGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4b1d0f" />
+      <stop offset="100%" stop-color="#391509" />
+    </linearGradient>
+    <linearGradient id="shirtGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f5f5" />
+      <stop offset="100%" stop-color="#e0e0e0" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <circle cx="200" cy="200" r="200" fill="#f8e9d2" />
+  
+  <!-- Shirt -->
+  <path d="M120,200 L120,400 L280,400 L280,200 C260,230 230,240 200,240 C170,240 140,230 120,200 Z" fill="url(#shirtGradient)" />
+  
+  <!-- Rolled-up sleeves -->
+  <path d="M120,230 L130,230 L130,320 L120,320 Z" fill="#cccccc" />
+  <path d="M280,230 L270,230 L270,320 L280,320 Z" fill="#cccccc" />
+  
+  <!-- Apron -->
+  <path d="M150,220 L150,400 L250,400 L250,220 C230,230 220,235 200,235 C180,235 170,230 150,220 Z" fill="url(#apronGradient)" />
+  <rect x="160" y="240" width="80" height="10" rx="5" fill="#331409" />
+  
+  <!-- Apron pockets -->
+  <rect x="160" y="300" width="25" height="20" rx="2" fill="#331409" />
+  <rect x="215" y="300" width="25" height="20" rx="2" fill="#331409" />
+  
+  <!-- Head -->
+  <circle cx="200" cy="140" r="70" fill="url(#skinGradient)" />
+  
+  <!-- Beard -->
+  <path d="M140,140 C140,200 260,200 260,140 L240,190 C240,190 220,200 200,200 C180,200 160,190 160,190 Z" fill="url(#hairGradient)" />
+  
+  <!-- Hair -->
+  <path d="M130,140 C130,120 150,70 200,70 C250,70 270,120 270,140 C270,150 260,160 260,160 C260,160 270,100 200,100 C130,100 140,160 140,160 C140,160 130,150 130,140 Z" fill="url(#hairGradient)" />
+  
+  <!-- Eyes -->
+  <ellipse cx="175" cy="125" rx="8" ry="6" fill="#3c2414" />
+  <ellipse cx="225" cy="125" rx="8" ry="6" fill="#3c2414" />
+  
+  <!-- Eyebrows -->
+  <path d="M160,115 C170,110 180,113 190,115" stroke="#2b2b2b" stroke-width="3" fill="none" />
+  <path d="M240,115 C230,110 220,113 210,115" stroke="#2b2b2b" stroke-width="3" fill="none" />
+  
+  <!-- Nose -->
+  <path d="M200,128 C200,128 195,145 200,150 C205,145 200,128 200,128 Z" fill="#c99876" />
+  
+  <!-- Mouth (mostly hidden by beard) -->
+  <path d="M185,165 C190,169 210,169 215,165" stroke="#a05b47" stroke-width="2" fill="none" />
+  
+  <!-- Spatula -->
+  <rect x="300" y="250" width="10" height="80" rx="2" fill="#5a4a42" />
+  <rect x="280" y="240" width="40" height="10" rx="2" fill="#5a4a42" />
+  <rect x="270" y="200" width="60" height="40" rx="2" fill="#aaa" />
+</svg> 

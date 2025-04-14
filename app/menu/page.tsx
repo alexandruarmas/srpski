@@ -32,7 +32,7 @@ export default function MenuPage() {
                     src={item.image || "/placeholder.svg"}
                     alt={item.translations[language].name}
                     fill
-                    className="object-cover"
+                    className="object-contain p-2"
                   />
                 </div>
                 <div className="flex flex-1 flex-col justify-between p-4">
@@ -42,7 +42,7 @@ export default function MenuPage() {
                   </div>
                   <div className="mt-2 flex items-center justify-between">
                     <span className="font-bold text-red-600">{item.price} RON</span>
-                    <Button asChild size="sm" className="bg-red-600 hover:bg-red-700">
+                    <Button asChild size="sm" className="bg-[#f8e9d2] text-[#4b1d0f] hover:bg-red-600 hover:text-white">
                       <Link href="/order">{t("menu.order")}</Link>
                     </Button>
                   </div>
@@ -61,7 +61,7 @@ export default function MenuPage() {
                     src={item.image || "/placeholder.svg"}
                     alt={item.translations[language].name}
                     fill
-                    className="object-cover"
+                    className="object-contain p-2"
                   />
                 </div>
                 <div className="flex flex-1 flex-col justify-between p-4">
@@ -71,7 +71,7 @@ export default function MenuPage() {
                   </div>
                   <div className="mt-2 flex items-center justify-between">
                     <span className="font-bold text-red-600">{item.price} RON</span>
-                    <Button asChild size="sm" className="bg-red-600 hover:bg-red-700">
+                    <Button asChild size="sm" className="bg-[#f8e9d2] text-[#4b1d0f] hover:bg-red-600 hover:text-white">
                       <Link href="/order">{t("menu.order")}</Link>
                     </Button>
                   </div>
@@ -90,7 +90,7 @@ export default function MenuPage() {
                     src={item.image || "/placeholder.svg"}
                     alt={item.translations[language].name}
                     fill
-                    className="object-cover"
+                    className="object-contain p-2"
                   />
                 </div>
                 <div className="flex flex-1 flex-col justify-between p-4">
@@ -100,7 +100,7 @@ export default function MenuPage() {
                   </div>
                   <div className="mt-2 flex items-center justify-between">
                     <span className="font-bold text-red-600">{item.price} RON</span>
-                    <Button asChild size="sm" className="bg-red-600 hover:bg-red-700">
+                    <Button asChild size="sm" className="bg-[#f8e9d2] text-[#4b1d0f] hover:bg-red-600 hover:text-white">
                       <Link href="/order">{t("menu.order")}</Link>
                     </Button>
                   </div>

@@ -68,7 +68,7 @@ export default function Navbar() {
 
         <div className="hidden items-center space-x-2 md:flex">
           <LanguageSwitcher />
-          <Button asChild className="bg-[#4b1d0f] hover:bg-[#331409] shadow-sm">
+          <Button asChild className="rounded-full bg-[#f8e9d2] text-[#4b1d0f] hover:bg-[#4b1d0f] hover:text-white">
             <Link href="/order" className="flex items-center">
               <ShoppingBag className="mr-2 h-4 w-4" />
               {t("nav.order")}
@@ -134,7 +134,7 @@ export default function Navbar() {
               <div className="flex items-center space-x-2 pt-4 border-t mt-2">
                 <LanguageSwitcher />
               </div>
-              <Button asChild className="mt-4 bg-[#4b1d0f] hover:bg-[#331409] shadow-sm">
+              <Button asChild className="mt-4 rounded-full bg-[#f8e9d2] text-[#4b1d0f] hover:bg-[#4b1d0f] hover:text-white">
                 <Link href="/order" onClick={() => setIsOpen(false)} className="flex items-center">
                   <ShoppingBag className="mr-2 h-5 w-5" />
                   {t("nav.order")}
